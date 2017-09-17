@@ -1531,6 +1531,15 @@ a {
 }
 }
 
+.textLink {
+	color: #3B5998;
+	text-decoration: underline;
+}
+
+.textLink:hover {
+	font-weight: bold;
+}
+
 .blue {
 	background: #0084ff;
 	color: white;

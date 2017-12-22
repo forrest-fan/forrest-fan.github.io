@@ -1,0 +1,43 @@
+<!doctype html5>
+<html>
+	<head>
+		<title>Pink Stickies</title>
+		<link type="text/css" rel="stylesheet" href="styles.css"/>
+		<link type="text/javascript" src="script.js"/>
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+		<link rel="icon" type="image/png" href="icon.png"/>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="w3-display-middle w3-center middle">
+				<p id="msg">Pink Stickies</p>
+			</div>
+			<div class="w3-display-bottommiddle w3-center bottom">
+				<a id="btn" onclick="drawSticky()">Draw a pink sticky</a>
+			</div>
+		</div>
+	</body>
+	<script>
+		var stickies = [
+			"I love how you're always smiling and laughing",
+			"I love how you're so enthusiastic you are with everything",
+			"I love how much you care about everyone",
+			"I love how you're dedicated to giving 110% everyday",
+			"I love how you know when to be serious and when to have fun",
+			"I love how you can make anyone smile at anytime",
+			"I love how you never change who you are",
+			"I love how you stay up and listen to me snore",
+			"I love how you deal with my crap everyday",
+			"I love how you put others before yourself",
+			"I love your <strong>hua</strong> pickup lines",
+			"I love your late night advice",
+			"I love how you spent so much time making 60 post-it notes for me"
+		];
+
+		function drawSticky() {
+			var message = document.getElementById('msg');
+			message.innerHTML = stickies[Math.floor(Math.random() * stickies.length)];
+		}
+	</script>
+</html>

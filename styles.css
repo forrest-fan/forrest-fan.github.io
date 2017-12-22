@@ -1,0 +1,50 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+.wrap {
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #f8116d;
+	height: 100%;
+}
+
+#msg {
+	font-size: 60px;
+	font-family: Indie Flower;
+	color: #0A084F;
+	margin-bottom: 50px;
+}
+
+#btn {
+	background: transparent;
+	padding: 20px 50px;
+	border-radius: 50px;
+	border: solid 3px #0A084F;
+	color: #0A084F;
+	font-weight: bold;
+	font-size: 30px;
+	font-family: Indie Flower;
+	transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    -ms-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+	transition: background 0.5s ease;
+    -o-transition: background 0.5s ease;
+    -ms-transition: background 0.5s ease;
+    -moz-transition: background 0.5s ease;
+    -webkit-transition: background 0.5s ease;
+}
+
+#btn:hover {
+	color: #f8116d;
+	background: #0a084f;
+	cursor: pointer;
+}
+
+.bottom {
+	margin-bottom: 50px;
+}

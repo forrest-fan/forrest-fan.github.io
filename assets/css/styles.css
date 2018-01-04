@@ -9,7 +9,7 @@
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-image: url('../img/landing.jpg');
-	min-height: 70%;
+	min-height: 100%;
 }
 
 .landingAbout {
@@ -18,7 +18,7 @@
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-image: url('../img/landing2.jpg');
-	min-height: 70%;
+	min-height: 100%;
 }
 
 .landingShop {
@@ -27,7 +27,7 @@
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-image: url('../img/landing3.jpg');
-	min-height: 70%;
+	min-height: 100%;
 }
 
 .linksBanner {

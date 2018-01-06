@@ -91,8 +91,8 @@
 			
 			function displayInfo() {
 				document.getElementById('productName').innerHTML='Product: ' + readCookie('product');
-				document.getElementById('productColor').innerHTML='Quantity: ' + readCookie('color');
-				document.getElementById('productPrice').innerHTML='Total price: $' + (parseFloat(readCookie('price'))).toFixed(2);
+				document.getElementById('productColor').innerHTML='Color: ' + readCookie('color');
+				document.getElementById('productPrice').innerHTML='Price: $' + (parseFloat(readCookie('price'))).toFixed(2);
 			}
 			
 			function createCookie(name,value,days) {

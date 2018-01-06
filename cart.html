@@ -34,21 +34,8 @@
 		</div>
 		
 		<div class="w3-container w3-padding-64" style="margin:50px auto 0px auto; max-width: 750px">
-			<h1 class="header w3-center">Confirm Add</h1>
-			<p class="text" id="productName"></p>
-			<p class="text" id="productColor"></p>
-			<p class="text" id="productPrice"></p>
-			<br>
-			<div class="w3-center w3-container">
-				<a onclick="addToCart()" class="homeCTA">Confirm</a>
-			</div>
-		</div>
-		
-		<div class="w3-modal w3-animate-opacity" id="addedPopup">
-			<div class="w3-modal-content w3-container w3-padding-64 w3-center">
-				<p class="subheader">Your order has been added.</p>
-				<a class="homeCTA w3-margin-right" href="addToCart.html">Continue Shopping</a><a class="homeCTA w3-margin-left" href="cart.html">Checkout</a>
-			</div>
+			<table id="cartTable"></table>
+			<div id="errorNoItems" class="w3-container w3-center"></div>
 		</div>
 		
 		<!--LINKS-->
@@ -90,9 +77,23 @@
 			}
 			
 			function displayInfo() {
-				document.getElementById('productName').innerHTML='Product: ' + readCookie('product');
-				document.getElementById('productColor').innerHTML='Quantity: ' + readCookie('color');
-				document.getElementById('productPrice').innerHTML='Total price: $' + (parseFloat(readCookie('price'))).toFixed(2);
+				var productArr = JSON.parse(readCookie('cartProduct'));
+				var colorArr = JSON.parse(readCookie('cartColor'));
+				var priceArr = JSON.parse(readCookie('cartPrice'));
+				var priceCount = 0;
+				var table = document.getElementById('cartTable');
+				if (productArr.length !== 0) {
+					table.innerHTML += '<tr style="background: #f4441a; color: #ffffff"><th>Product</th><th>Color</th><th>Price</th><th></th></tr>';
+					for (var i = 0; i < productArr.length; i++) {
+						table.innerHTML += '<tr><td>' + productArr[i] + '</td><td>' + colorArr[i] + '</td><td>$ ' + priceArr[i] + '</td><td><i class="fa fa-trash" onclick="removeFromCart(' + i + ')"></i></td></tr>';
+						priceCount += parseFloat(priceArr[i]);
+					}
+					priceCount = priceCount.toFixed(2);
+					createCookie('totalPrice', priceCount, 7);
+					table.innerHTML += '<tr style="font-weight:bold"><td></td><td></td><td>$ ' + priceCount + '</td><td></td></tr>';
+				} else {
+					document.getElementById('errorNoItems').innerHTML = '<p class="text">You have no items in your cart</p><a href="shop.html" class="CTAHome" style="margin-bottom:100px">View Products</a>';
+				}
 			}
 			
 			function createCookie(name,value,days) {

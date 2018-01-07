@@ -127,7 +127,7 @@
 				createCookie('cartProduct', JSON.stringify(productArr), 7);
 				
 				var colorArr = JSON.parse(readCookie('cartColor'));
-				productArr.splice(index, 1);
+				colorArr.splice(index, 1);
 				createCookie('cartColor', JSON.stringify(colorArr), 7);
 				
 				var priceArr = JSON.parse(readCookie('cartPrice'));
@@ -147,7 +147,7 @@
 					createCookie('totalPrice', priceCount, 7);
 					table.innerHTML += '<tr style="font-weight:bold"><td></td><td></td><td>$ ' + priceCount + '</td><td></td></tr>';
 				} else {
-					document.getElementById('errorNoItems').innerHTML = '<p class="text">You have no items in your cart</p><a href="shop.html" class="CTAHome" style="margin-bottom:100px">View Products</a>';
+					document.getElementById('errorNoItems').innerHTML = '<p class="text">You have no items in your cart</p><a href="shop.html" class="homeCTA" style="margin-bottom:100px">View Products</a>';
 				}
 			}
 		</script>

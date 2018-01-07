@@ -121,47 +121,33 @@
 				createCookie(name,"",-1);
 			}
 			
-			function addToCart() {
-				// add name to array
-				if (readCookie('cartProduct') === null) {
-					var productArr = [readCookie('product')];
-					var productStr = JSON.stringify(productArr);
-					createCookie('cartProduct', productStr, 7);
-				} else {
-					var productStr = readCookie('cartProduct');
-					var productArr = JSON.parse(productStr);
-					productArr.push(readCookie('product'));
-					productStr = JSON.stringify(productArr);
-					createCookie('cartProduct', productStr, 7);
-				}
+			function removeFromCart(index) {
+				var productArr = JSON.parse(readCookie('cartProduct'));
+				productArr.splice(index, 1);
+				createCookie('cartProduct', JSON.stringify(productArr), 7);
 				
-				// add color to array
-				if (readCookie('cartColor') === null) {
-					var colorArr = [readCookie('color')];
-					var colorStr = JSON.stringify(colorArr);
-					createCookie('cartColor', colorStr, 7);
-				} else {
-					var colorStr = readCookie('cartColor');
-					var colorArr = JSON.parse(colorStr);
-					colorArr.push(readCookie('color'));
-					colorStr = JSON.stringify(colorArr);
-					createCookie('cartColor', colorStr, 7);
-				}
+				var colorArr = JSON.parse(readCookie('cartColor'));
+				productArr.splice(index, 1);
+				createCookie('cartColor', JSON.stringify(colorArr), 7);
 				
-				// add price to array
-				if (readCookie('cartPrice') === null) {
-					var priceArr = [(parseFloat(readCookie('price'))).toFixed(2)];
-					var priceStr = JSON.stringify(priceArr);
-					createCookie('cartPrice', priceStr, 7);
-				} else {
-					var priceStr = readCookie('cartPrice');
-					var priceArr = JSON.parse(priceStr);
-					priceArr.push((parseFloat(readCookie('price'))).toFixed(2));
-					priceStr = JSON.stringify(priceArr);
-					createCookie('cartPrice', priceStr, 7);
-				}
+				var priceArr = JSON.parse(readCookie('cartPrice'));
+				priceArr.splice(index, 1);
+				createCookie('cartPrice', JSON.stringify(priceArr), 7);
 				
-				document.getElementById('addedPopup').style.display='block';
+				var priceCount = 0;
+				var table = document.getElementById('cartTable');
+				if (productArr.length !== 0) {
+					table.innerHTML += '<tr style="background: #f4441a; color: #ffffff"><th>Product</th><th>Color</th><th>Price</th><th></th></tr>';
+					for (var i = 0; i < productArr.length; i++) {
+						table.innerHTML += '<tr><td>' + productArr[i] + '</td><td>' + colorArr[i] + '</td><td>$ ' + priceArr[i] + '</td><td><i class="fa fa-trash" onclick="removeFromCart(' + i + ')"></i></td></tr>';
+						priceCount += parseFloat(priceArr[i]);
+					}
+					priceCount = priceCount.toFixed(2);
+					createCookie('totalPrice', priceCount, 7);
+					table.innerHTML += '<tr style="font-weight:bold"><td></td><td></td><td>$ ' + priceCount + '</td><td></td></tr>';
+				} else {
+					document.getElementById('errorNoItems').innerHTML = '<p class="text">You have no items in your cart</p><a href="shop.html" class="CTAHome" style="margin-bottom:100px">View Products</a>';
+				}
 			}
 		</script>
 	</body>

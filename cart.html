@@ -136,6 +136,7 @@
 				
 				var priceCount = 0;
 				var table = document.getElementById('cartTable');
+				table.innerHTML = '';
 				if (productArr.length !== 0) {
 					table.innerHTML += '<tr style="background: #f4441a; color: #ffffff"><th>Product</th><th>Color</th><th>Price</th><th></th></tr>';
 					for (var i = 0; i < productArr.length; i++) {

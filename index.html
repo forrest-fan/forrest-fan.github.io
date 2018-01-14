@@ -1,104 +1,30 @@
 <!doctype html5>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="assets/css/styles.css"/>
-		<link rel="stylesheet" type="text/css" href="assets/css/w3.css"/>
+		<link rel="stylesheet" type="text/css" href="styles.css"/>
+		<link rel="stylesheet" type="text/css" href="w3.css"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-		<title>Slim Wallet</title>
+		<title>Greenback</title>
 	</head>
 	<body>
-		<!--LARGE NAVBAR-->
-		<div class="w3-top w3-bar w3-card-4 navbar w3-hide-medium w3-hide-small">
-			<a class="logo" href="index.html">SLIM WALLET</a>
-			<div class="w3-right w3-hide-small navLinks">
-				<a class="navLink" href="about.html">ABOUT</a>
-				<a class="navLink" href="shop.html">WALLET</a>
-				<a class="navLink" href="contact.html">CONTACT</a>
-				<a class="cartLink" href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+		<div class="w3-display-container landing">
+			<div class="w3-display-topmiddle">
+				<h3 class="logo"><strong>green</strong>back</h3>
 			</div>
-		</div>
-		
-		<!--COMPRESSED NAVBAR-->
-		<div class="w3-top w3-bar w3-card-4 navbar w3-hide-large w3-display-container">
-			<a class="hamburger" href="javascript:void(0)" onclick="openNav()"><i class="fa fa-bars"></i></a>
-			<a class="logo w3-display-middle" href="index.html">SLIM WALLET</a>
-		</div>
-		
-		<!--SIDE NAV-->
-		<div id="mySidenav" class="sidenav w3-card-4">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<a href="index.html" class="w3-bar-item sidenavButton" onclick="closeNav()">HOME</a>
-			<a href="about.html" class="w3-bar-item sidenavButton" onclick="closeNav()">ABOUT</a>
-			<a href="shop.html" class="w3-bar-item sidenavButton" onclick="closeNav()">WALLET</a>
-			<a href="contact.html" class="w3-bar-item sidenavButton" onclick="closeNav()">CONTACT</a>
-		</div>
-		
-		<!--LANDING PAGE-->
-		<div class="landing w3-display-container">
-			<div class="w3-display-middle w3-center landingContent">
-				<h1 class="landingHeaderLarge w3-hide-medium w3-hide-small">Make Money Slim.</h1>
-				<h1 class="landingHeaderMiddle w3-hide-large w3-hide-small">Make Money Slim.</h1>
-				<h1 class="landingHeaderSmall w3-hide-large w3-hide-medium">Make Money Slim.</h1>
-				<h2 class="landingSubtitleLarge w3-hide-medium w3-hide-small">Leave big, bulky wallets behind.</h2>
-				<h2 class="landingSubtitleMiddle w3-hide-large w3-hide-small">Leave big, bulky wallets behind.</h2>
-				<h2 class="landingSubtitleSmall w3-hide-large w3-hide-medium">Leave big, bulky wallets behind.</h2>
-			</div>
-		</div>
-		
-		<!--PREVIEWS-->
-		<div class="w3-container w3-center w3-padding-32">
-			<div class="homeText">
-				<h1 class="header">We Build Style.</h1>
-				<p class="text">No more big fat wallets. Text description, make this sound really nice. Gotta capture attention!</p>
-			</div>
-			<div class="w3-container">
-				<img src="assets/img/wallet1.jpg" class="w3-col l3 m6 s12 w3-row-padding w3-margin-top w3-margin-bottom"/>
-				<img src="assets/img/wallet2.jpg" class="w3-col l3 m6 s12 w3-row-padding w3-margin-top w3-margin-bottom"/>
-				<img src="assets/img/wallet3.jpg" class="w3-col l3 m6 s12 w3-row-padding w3-margin-top w3-margin-bottom"/>
-				<img src="assets/img/wallet4.jpg" class="w3-col l3 m6 s12 w3-row-padding w3-margin-top w3-margin-bottom"/>
-			</div>
-			<div class="w3-padding-16">
-				<a class="homeCTA" href="about.html">Learn More</a>
-			</div>
-		</div>
-		
-		<!--LINKS-->
-		<div class="w3-container w3-center w3-padding-16 linksBanner">
-			<div class="w3-padding-16">
-				<h2 class="subheader w3-text-white">Sign up for our newsletter</h2>
-				<form action="newsletter.php" method="post" class="newsletter w3-hide-small">
-					<input name="email" placeholder="firstnamelastname@example.com" class="signupEmail" required/>
-					<input name="submit" value="Go" type="submit" class="signupCTA"/>
-				</form>
-				<form action="newsletter.php" method="post" class="newsletter w3-hide-large w3-hide-medium">
-					<input name="email" placeholder="Email" class="signupEmailSmall" required/>
-					<input name="submit" value="Go" type="submit" class="signupCTA"/>
-				</form>
-			</div>
-			<hr style="color:white; margin: 15px 15% 0px 15%"/>
-			<div class="w3-padding-16">
-				<h2 class="subheader w3-text-white">Connect with us</h2>
-				<span class="SMLinks">
-					<a href="#"><i class="fa fa-facebook-f SMLink facebook"></i></a>
-					<a href="#"><i class="fa fa-instagram SMLink instagram"></i></a>
-					<a href="#"><i class="fa fa-twitter SMLink twitter"></i></a>
-					<a href="#"><i class="fa fa-snapchat-ghost SMLink snapchat"></i></a>
+			<div class="w3-display-middle w3-center" style="width:100%">
+				<h1 class="title">SOMETHING IS COMING.</h1>
+				<h2 class="subtitle">be the first to know.</h2>
+				<span class="addEmail">
+					<form action="addEmail.php" method="post" class="emailForm w3-hide-small">
+						<input name="email" placeholder="enter your email." class="signupEmail" required/>
+						<input name="submit" value="&#8594;" type="submit" class="signupCTA"/>
+					</form>
 				</span>
 			</div>
-			<div class="w3-padding-16">
-				<p class="copyright">&copy SLIM WALLET 2018</p>
+			<div class="w3-display-bottommiddle w3-center SMContainer" style="width:100%">
+				<i class="fa fa-facebook-f SMLink"></i>
+				<i class="fa fa-instagram SMLink"></i>
 			</div>
 		</div>
-		<script>
-			/* Set the width of the side navigation to 250px */
-			function openNav() {
-			    document.getElementById("mySidenav").style.width = "250px";
-			}
-									
-			/* Set the width of the side navigation to 0 */
-			function closeNav() {
-			    document.getElementById("mySidenav").style.width = "0";
-			}
-		</script>
 	</body>
 </html>

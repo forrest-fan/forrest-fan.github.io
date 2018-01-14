@@ -1,0 +1,66 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.landing {
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	min-height: 100%;
+	background-image: url('landing.jpg');
+}
+
+.logo {
+	color: #ffffff;
+}
+
+.title {
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 65px;
+}
+
+.subtitle {
+	color: #ffffff;
+	font-weight: 300;
+	font-size: 30px;
+}
+
+.signupEmail {
+	padding: 7px 15px;
+	width: 40%;
+	background: rgba(255, 255, 255, 0.4);
+	border: none;
+	border-radius: 50px 0px 0px 50px;
+	color: #ffffff;
+	font-size: 15px;
+	margin-right: -5px;
+}
+
+.signupEmail:focus {
+	outline: none;
+}
+
+.signupCTA {
+	padding: 6px 15px;
+	font-size: 17px;
+	border: none;
+	background: rgba(255, 255, 255, 0.4);
+	border-radius: 0px 50px 50px 0px;
+	color: #ffffff;
+}
+
+.signupCTA:focus {
+	outline: none;
+}
+
+.SMContainer {
+	padding: 15px;
+}
+
+.SMLink {
+	color: #cccccc;
+	font-size: 20px!important;
+	margin: 0px 5px;
+}

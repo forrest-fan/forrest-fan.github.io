@@ -1,6 +1,7 @@
 *{
 	padding: 0px;
 	margin: 0px;
+	font-family: Nunito;
 }
 .landing {
 	background-position: center;
@@ -13,6 +14,7 @@
 
 .logo {
 	color: #ffffff;
+	font-size: 22px;
 }
 
 .title {

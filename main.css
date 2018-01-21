@@ -126,8 +126,8 @@ body, html {
 
 .featureIcon {
 	font-size: 60px!important;
-	color: #FC7603;
-	border: 3px solid #FC7603;
+	color: #FC7063;
+	border: 3px solid #FC7063;
 	border-radius: 50%;
 }
 
@@ -139,5 +139,5 @@ body, html {
 .footer {
 	font-family: Lato;
 	font-size: 15px;
-	color: #FC7603;
+	color: #FC7063;
 }

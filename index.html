@@ -21,16 +21,79 @@
 				<h1 class="landingTitle">Introducing <strong>Penny</strong>,</h1>
 				<h2 class="landingSubtitle">Your personal receipt manager and expense tracker</h2>
 				<br>
-				<a class="landingCTA">DISCOVER</a>
+				<a class="landingCTA" href="#1">DISCOVER</a>
 			</div>
 		</div>
-		<div class="w3-display-container w3-padding-32">
+		<div class="w3-display-container w3-padding-32" id="1">
 			<div class="w3-center">
-				<h2 class="mainText">Receipts are annoying.</h2>
+				<h2 class="mainText">Receipts are annoying. We feel it too.</h2>
 				<h3 class="subText">That's why we're providing a service that deals with them for you.</h3>
+			</div>
+			<div class="w3-center">
 				<hr class="divide"/>
 				<h2 class="sectionHeader">How?</h2>
+				<div class="w3-container w3-row-padding w3-padding-16">
+					<div class="w3-col l4 m4 s12 w3-center w3-padding">
+						<i class="featureIcon fa fa-camera-retro" style="padding: 28px 31px;"></i>
+						<br><br>
+						<p class="featureText">Just snap a pic of your receipt and we'll handle the rest. Then you can trash it, rip it, burn it (we won't judge).</p>
+					</div>
+					<div class="w3-col l4 m4 s12 w3-center w3-padding">
+						<i class="featureIcon fa fa-file-text" style="padding: 28px 33px;"></i>
+						<br><br>
+						<p class="featureText">Access your past receipts anytime, anywhere. Whether you need to get a refund or alksdj a weoina sij asi apweijf.</p>
+					</div>
+					<div class="w3-col l4 m4 s12 w3-center w3-padding">
+						<i class="featureIcon fa fa-line-chart" style="padding: 28px 25px;"></i>
+						<br><br>
+						<p class="featureText">View your expenses and trends based on your receipts. Use this to manage your spending or to save up for something big.</p>
+					</div>
+				</div>
 			</div>
 		</div>
+		<div class="banner1">
+		
+		</div>
+		<div class="w3-container w3-padding-16 w3-center">
+			<div class="w3-padding-16 w3-center">
+				<h2 class="sectionHeader">Get It Now</h2>
+				<div class="w3-row-padding w3-padding-16 w3-container">
+					<div class="w3-col l6 m6 s12">
+						<img src="img/googleplay.png" class="downloadImg"/>
+					</div>
+					<div class="w3-col l6 m6 s12">
+						<img src="img/appstore.png" class="downloadImg"/>
+					</div>
+				</div>
+			</div>
+			<p class="footer">&copy 2018 Penny</p>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") {
+			  // Prevent default anchor click behavior
+			  event.preventDefault();
+
+			  // Store hash
+			  var hash = this.hash;
+
+			  // Using jQuery's animate() method to add smooth page scroll
+			  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			  $('html, body').animate({
+				scrollTop: $(hash).offset().top
+			  }, 800, function(){
+		   
+				// Add hash (#) to URL when done scrolling (default click behavior)
+				window.location.hash = hash;
+			  });
+			} // End if
+		  });
+		});
+		</script>
 	</body>
 </html>

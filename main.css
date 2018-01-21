@@ -16,6 +16,15 @@ body, html {
 	background-repeat: no-repeat;
 }
 
+.banner1 {
+	background-image: url('img/banner1.jpg');
+	min-height: 60%;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
 .logo {
 	font-family: Lobster;
 	color: #ffffff;
@@ -34,7 +43,7 @@ body, html {
 	background: rgba(255, 255, 255, 0);
 	transition: background 0.3s ease;
 	-webkit-transition: background 0.3s ease;
-	
+	text-decoration: none;
 }
 
 .landingCTA:hover {
@@ -54,6 +63,13 @@ body, html {
 	font-size: 20px;
 }
 
+.sectionHeader {
+	font-family: Montserrat;
+	font-size: 27px;
+	font-weight: bold;
+	color: #555555;
+}
+
 @media (min-width: 900px) {
 	.landingTitle {
 		font-size: 40px;
@@ -65,7 +81,10 @@ body, html {
 	}
 	.divide {
 		border: 1px solid #dddddd;
-		margin: 20px 50px;
+		margin: 30px 50px;
+	}
+	.downloadImg {
+		width: 40%;
 	}
 }
 
@@ -80,7 +99,10 @@ body, html {
 	}
 	.divide {
 		border: 1px solid #dddddd;
-		margin: 20px 50px;
+		margin: 30px 50px;
+	}
+	.downloadImg {
+		width: 60%;
 	}
 }
 
@@ -95,6 +117,27 @@ body, html {
 	}
 	.divide {
 		border: 1px solid #dddddd;
-		margin: 20px 25px;
+		margin: 30px 25px;
 	}
+	.downloadImg {
+		width: 80%;
+	}
+}
+
+.featureIcon {
+	font-size: 60px!important;
+	color: #FC7603;
+	border: 3px solid #FC7603;
+	border-radius: 50%;
+}
+
+.featureText {
+	font-family: Lato;
+	font-size: 20px;
+}
+
+.footer {
+	font-family: Lato;
+	font-size: 15px;
+	color: #FC7603;
 }

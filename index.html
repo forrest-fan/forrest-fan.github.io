@@ -1,99 +1,20 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html5>
 <html>
 	<head>
-		<title>Penny</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"/>
-		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"/>
-		<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet"/>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-		<link rel="stylesheet" href="main.css" />
-		<link rel="icon" href="img/favicon.png"/>
+		<title>RBC Practice</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="styles.css"/>
+		<script src="script.js"></script>
 	</head>
 	<body>
-		<div class="w3-display-container landing">
-			<div class="w3-display-topmiddle">
-				<p class="logo">P</p>
-			</div>
-			<div class="w3-display-middle w3-center w3-text-white" width="100%">
-				<h1 class="landingTitle">Introducing <strong>Penny</strong>,</h1>
-				<h2 class="landingSubtitle">Your personal receipt manager and expense tracker</h2>
-				<br>
-				<a class="landingCTA" href="#1">DISCOVER</a>
-			</div>
-		</div>
-		<div class="w3-display-container w3-padding-32" id="1">
-			<div class="w3-center">
-				<h2 class="mainText">Receipts are annoying. We feel it too.</h2>
-				<h3 class="subText">That's why we're providing a service that deals with them for you.</h3>
-			</div>
-			<div class="w3-center">
-				<hr class="divide"/>
-				<h2 class="sectionHeader">How?</h2>
-				<div class="w3-container w3-row-padding w3-padding-16">
-					<div class="w3-col l4 m4 s12 w3-center w3-padding">
-						<i class="featureIcon fa fa-camera-retro" style="padding: 28px 31px;"></i>
-						<br><br>
-						<p class="featureText">Just snap a pic of your receipt and we'll handle the rest. Then you can trash it, rip it, burn it (we won't judge).</p>
-					</div>
-					<div class="w3-col l4 m4 s12 w3-center w3-padding">
-						<i class="featureIcon fa fa-file-text" style="padding: 28px 33px;"></i>
-						<br><br>
-						<p class="featureText">Access your past receipts anytime, anywhere. Whether you need to get a refund or just need to refer to it, it's right there.</p>
-					</div>
-					<div class="w3-col l4 m4 s12 w3-center w3-padding">
-						<i class="featureIcon fa fa-line-chart" style="padding: 28px 25px;"></i>
-						<br><br>
-						<p class="featureText">View your expenses and trends based on your receipts. Use this to manage your spending or to save up for something big.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="banner1">
-		
-		</div>
-		<div class="w3-container w3-padding-16 w3-center">
-			<div class="w3-padding-16 w3-center">
-				<h2 class="sectionHeader">Get It Now</h2>
-				<div class="w3-row-padding w3-padding-16 w3-container">
-					<div class="w3-col l6 m6 s12">
-						<img src="img/googleplay.png" class="downloadImg"/>
-					</div>
-					<div class="w3-col l6 m6 s12">
-						<img src="img/appstore.png" class="downloadImg"/>
-					</div>
-				</div>
-			</div>
-			<p class="footer">&copy 2018 Penny</p>
-		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script>
-		$(document).ready(function(){
-		  // Add smooth scrolling to all links
-		  $("a").on('click', function(event) {
+		<h1>Bringing out the big guns</h1>
+		<p class="doge">Now <b>this</b> is <u>what</u> i'm <i>talking</i> about</p>
+		<br>
+		<a href="https://www.google.com" class="doge">Click me</a>
 
-			// Make sure this.hash has a value before overriding default behavior
-			if (this.hash !== "") {
-			  // Prevent default anchor click behavior
-			  event.preventDefault();
+		<button type="button" class="btn btn-info" onclick="saysomething()">Info</button>	
 
-			  // Store hash
-			  var hash = this.hash;
-
-			  // Using jQuery's animate() method to add smooth page scroll
-			  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-			  $('html, body').animate({
-				scrollTop: $(hash).offset().top
-			  }, 800, function(){
-		   
-				// Add hash (#) to URL when done scrolling (default click behavior)
-				window.location.hash = hash;
-			  });
-			} // End if
-		  });
-		});
-		</script>
+		<img width="50%" src="https://secure.i.telegraph.co.uk/multimedia/archive/03321/tired-women_3321338b.jpg" id="pic"/>
+		<button type="button" class="btn btn-warning" onclick="togglepic()">Pic</button>
 	</body>
 </html>

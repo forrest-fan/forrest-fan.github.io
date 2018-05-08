@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<title>Food Menu | Computer Science Centre</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="img/favicon.png"/>
+	<style>
+		body,h1,h2,h3,h4,h5,h6 {
+			font-family: "Raleway", sans-serif
+		}
+		body, html {
+			height: 100%;
+			line-height: 1.8;
+		}
+		/* Full height image header */
+		.bgimg-1 {
+			background-position: center;
+			background-size: cover;
+			background-image: url("img/computer.jpg");
+			min-height: 100%;
+		}
+		.w3-bar .w3-button:not(.logo) {
+			padding: 16px;
+		}
+	</style>
+	<body>
+		<!-- Navbar (sit on top) -->
+		<div class="w3-top">
+			<div class="w3-bar w3-black w3-card-2 w3-wide" id="myNavbar">
+				<a href="index.html" class="w3-button w3-wide logo" style="margin-left:10px; padding-top:12.5px"><img src="img/logo.png" height="30px"/></a>
+				<!-- Right-sided navbar links -->
+				<div class="w3-right w3-hide-small">
+					<a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+					<a href="visit.html" class="w3-bar-item w3-button">VISIT</a>
+					<a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+					<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfRAjUhM-BPgRvrLyLzlE6aMZbkvgz1kZNvPjLVng4iVZ080Q/viewform?usp=sf_link" class="w3-bar-item w3-button specialNav w3-red w3-hover-dark-red">BUY TICKETS</a>
+				</div>
+				<!-- Hide right-floated links on small screens and replace them with a menu icon -->
+				<a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+				<i class="fa fa-bars w3-padding-right w3-padding-left"></i>
+				</a>
+			</div>
+		</div>
+		
+		<!-- Sidebar on small screens when clicking the menu icon -->
+		<nav class="w3-sidebar w3-bar-block w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+			<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close</a>
+			<a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+			<a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+			<a href="visit.html" onclick="w3_close()" class="w3-bar-item w3-button">VISIT</a>
+			<a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+			<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfRAjUhM-BPgRvrLyLzlE6aMZbkvgz1kZNvPjLVng4iVZ080Q/viewform?usp=sf_link" onclick="w3_close()" class="w3-bar-item w3-button specialNav">BUY TICKETS</a>
+		</nav>
+		
+		
+		<!-- FOOD MENU -->
+		<div class="w3-container w3-light-grey w3-padding-64">
+			<h2 class="w3-center">FOOD MENU</h2>
+			<p class="w3-center">Whether you’re grabbing a quick snack, or sitting down for a meal, we have you covered. Explore our wide variety of food and drinks that anyone can enjoy.</p>
+			<div style="margin-top:50px">
+				<div class="w3-col w3-half w3-padding-large">
+					<h3 class="w3-center">Food</h3>
+					<div class="w3-container w3-large">
+						<li>Pepporoni, Cheese, and Vegetarian Pizza</li>
+						<li>Hamburgers</li>
+						<li>Hot dogs</li>
+						<li>Salads</li>
+						<li>Fries & Poutine</li>
+						<li>Sandwiches</li>
+						<li>Ice Cream</li>
+						<li>Cookies</li>
+					</div>
+				</div>
+				<div class="w3-col w3-half w3-padding-large">
+					<h3 class="w3-center">
+					Drinks
+					<h3>
+					<div class="w3-container w3-large">
+						<li>Soft drinks</li>
+						<li>Coffee and Tea</li>
+						<li>Juice</li>
+						<li>Milkshakes</li>
+						<li>Sports drinks</li>
+						<li>Water</li>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="w3-container w3-padding-32">
+				<div class="w3-col w3-half w3-padding-large">
+					<img src="img/snackBar3.jpg" width="100%" onclick="onClick(this)" style="cursor:pointer" class="w3-hover-opacity"/>
+				</div>
+				<div class="w3-col w3-half w3-padding-large">
+					<img src="img/snackBar4.jpg" width="100%" onclick="onClick(this)" style="cursor:pointer" class="w3-hover-opacity"/>
+				</div>
+			</div>
+			<div id="modal01" class="w3-modal w3-center w3-hide-small" onclick="this.style.display='none'">
+				<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+				<img class="w3-modal-content w3-animate-zoom" id="img01">
+			</div>
+		</div>
+		
+		
+		<!-- Footer -->
+		<footer class="w3-center w3-black w3-padding-32">
+			<div class="w3-xlarge w3-section">
+				<a href="https://www.facebook.com/ComputerScienceCentre/" target="_blank"><i class="fa fa-facebook-official w3-hover-text-red"></i></a>
+				<a href="https://twitter.com/CSC_FBLA" traget="_blank"><i class="fa fa-twitter w3-hover-text-red"></i></a>
+				<a class="typeform-share button" href="https://csc10.typeform.com/to/pQdWXl" data-mode="popup" target="_blank"><i class="fa fa-envelope w3-hover-text-red"></i></a>
+				<p class="w3-medium w3-padding-16">&copy 2017 Computer Science Centre | Powered by W3.CSS</p>
+			</div>
+		</footer>
+		<script> (function() { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm_share", b = "https://s3-eu-west-1.amazonaws.com/share.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "share.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
+		<script>
+			// Modal Image Gallery
+			function onClick(element) {
+			  document.getElementById("img01").src = element.src;
+			  document.getElementById("modal01").style.display = "block";
+			  var captionText = document.getElementById("caption");
+			  captionText.innerHTML = element.alt;
+			  document.getElementById("img01").width = window.innerWidth - 100;
+			}
+			
+			
+			// Toggle between showing and hiding the sidebar when clicking the menu icon
+			var mySidebar = document.getElementById("mySidebar");
+			
+			function w3_open() {
+			    if (mySidebar.style.display === 'block') {
+			        mySidebar.style.display = 'none';
+			    } else {
+			        mySidebar.style.display = 'block';
+			    }
+			}
+			
+			// Close the sidebar with the close button
+			function w3_close() {
+			    mySidebar.style.display = "none";
+			}
+		</script>
+	</body>
+</html>

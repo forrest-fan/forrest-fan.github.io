@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<title>Evolution of Technology Exhibit | Computer Science Centre</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="img/favicon.png"/>
+	<style>
+		body,h1,h2,h3,h4,h5,h6 {
+			font-family: "Raleway", sans-serif
+		}
+		body, html {
+			height: 100%;
+			line-height: 1.8;
+		}
+		/* Full height image header */
+		.bgimg-1 {
+			background-position: center;
+			background-size: cover;
+			background-image: url("img/application2.jpg");
+			min-height: 100%;
+		}
+		.w3-bar .w3-button:not(.logo) {
+			padding: 16px;
+		}
+		.homeBack {
+			background-position: center;
+			background-size: cover;
+			background-image: url("img/application.jpg");
+			min-height: 60%;
+		}
+		.applicationsBack {
+			background-position: center;
+			background-size: cover;
+			background-image: url("img/application.jpg");
+			min-height: 60%;
+		}
+		.blocksBack {
+			background-position: center;
+			background-size: cover;
+			background-image: url("img/blocks.jpg");
+			min-height: 60%;
+		}
+		.evolutionBack {
+			background-position: center;
+			background-size: cover;
+			background-image: url("img/oldPhone.jpg");
+			min-height: 60%;
+		}
+	</style>
+	<body>
+		<!-- Navbar (sit on top) -->
+		<div class="w3-top">
+			<div class="w3-bar w3-black w3-card-2 w3-wide" id="myNavbar">
+				<a href="index.html" class="w3-button w3-wide logo" style="margin-left:10px; padding-top:12.5px"><img src="img/logo.png" height="30px"/></a>
+				<!-- Right-sided navbar links -->
+				<div class="w3-right w3-hide-small">
+					<a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+					<a href="visit.html" class="w3-bar-item w3-button">VISIT</a>
+					<a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+					<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfRAjUhM-BPgRvrLyLzlE6aMZbkvgz1kZNvPjLVng4iVZ080Q/viewform?usp=sf_link" class="w3-bar-item w3-button specialNav w3-red w3-hover-dark-red">BUY TICKETS</a>
+				</div>
+				<!-- Hide right-floated links on small screens and replace them with a menu icon -->
+				<a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+				<i class="fa fa-bars w3-padding-right w3-padding-left"></i>
+				</a>
+			</div>
+		</div>
+		
+		<!-- Sidebar on small screens when clicking the menu icon -->
+		<nav class="w3-sidebar w3-bar-block w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+			<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close</a>
+			<a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+			<a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+			<a href="visit.html" onclick="w3_close()" class="w3-bar-item w3-button">VISIT</a>
+			<a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+			<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfRAjUhM-BPgRvrLyLzlE6aMZbkvgz1kZNvPjLVng4iVZ080Q/viewform?usp=sf_link" onclick="w3_close()" class="w3-bar-item w3-button specialNav">BUY TICKETS</a>
+		</nav>
+		
+		
+		<!-- DESCRIPTION OF EXHIBIT -->
+		<div class="w3-container w3-padding-64 w3-center" id="description">
+			<h2>EVOLUTION OF TECHNOLOGY</h2>
+			<div class="w3-container w3-padding-16 w3-center">
+				<p>Experience the transformation of technology to our digital age through the Computer Science Center’s Evolution of Technology exhibit. Since electricity was invented, countless breakthroughs have been made that brings us to where we are today. From the first computer invented, to artificial intelligence, witness the short but swiftly developing timeline of technology. Get world class hands on experience with appliances and interactive videos, taking you through a journey of a lifetime. Walk through our galleries to see each technological device advance throughout the years. With over 200 different gadgets, our exhibit thoroughly portrays the rapid evolution of technology.</p>
+			</div>
+			<div class="w3-container w3-padding-32">
+				<div class="w3-col w3-half w3-padding-large">
+					<img src="img/evolution.jpg" width="100%" onclick="onClick(this)" style="cursor:pointer" class="w3-hover-opacity"/>
+				</div>
+				<div class="w3-col w3-half w3-padding-large">
+					<img src="img/evolution2.jpg" width="100%" onclick="onClick(this)" style="cursor:pointer" class="w3-hover-opacity"/>
+				</div>
+			</div>
+			<div id="modal01" class="w3-modal w3-center w3-hide-small" onclick="this.style.display='none'">
+				<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+				<img class="w3-modal-content w3-animate-zoom" id="img01">
+			</div>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			  // Add smooth scrolling to all links
+			  $("a").on('click', function(event) {
+			
+			    // Make sure this.hash has a value before overriding default behavior
+			    if (this.hash !== "") {
+			      // Prevent default anchor click behavior
+			      event.preventDefault();
+			
+			      // Store hash
+			      var hash = this.hash;
+			
+			      // Using jQuery's animate() method to add smooth page scroll
+			      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			      $('html, body').animate({
+			        scrollTop: $(hash).offset().top
+			      }, 2000, function(){
+			   
+			        // Add hash (#) to URL when done scrolling (default click behavior)
+			        window.location.hash = hash;
+			      });
+			    } // End if
+			  });
+			});
+		</script>
+		
+		<!-- Footer -->
+		<footer class="w3-center w3-black w3-padding-32">
+			<div class="w3-xlarge w3-section">
+				<a href="https://www.facebook.com/ComputerScienceCentre/" target="_blank"><i class="fa fa-facebook-official w3-hover-text-red"></i></a>
+				<a href="https://twitter.com/CSC_FBLA" target="_blank"><i class="fa fa-twitter w3-hover-text-red"></i></a>
+				<a class="typeform-share button" href="https://csc10.typeform.com/to/pQdWXl" data-mode="popup" target="_blank"><i class="fa fa-envelope w3-hover-text-red"></i></a>
+				<p class="w3-medium w3-padding-16">&copy 2017 Computer Science Centre | Powered by W3.CSS</p>
+			</div>
+		</footer>
+		<script> (function() { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm_share", b = "https://s3-eu-west-1.amazonaws.com/share.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "share.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
+		<script>
+			// Modal Image Gallery
+			function onClick(element) {
+			  document.getElementById("img01").src = element.src;
+			  document.getElementById("modal01").style.display = "block";
+			  var captionText = document.getElementById("caption");
+			  captionText.innerHTML = element.alt;
+			  document.getElementById("img01").width = window.innerWidth - 100;
+			}
+			
+			// Toggle between showing and hiding the sidebar when clicking the menu icon
+			var mySidebar = document.getElementById("mySidebar");
+			
+			function w3_open() {
+			    if (mySidebar.style.display === 'block') {
+			        mySidebar.style.display = 'none';
+			    } else {
+			        mySidebar.style.display = 'block';
+			    }
+			}
+			
+			// Close the sidebar with the close button
+			function w3_close() {
+			    mySidebar.style.display = "none";
+			}
+		</script>
+	</body>
+</html>

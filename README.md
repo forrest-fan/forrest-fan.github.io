@@ -21,3 +21,8 @@ A website built for the Website Design competition for FBLA 2017. View it [here]
 > December 2016
 
 A website built for Cogito, a JA company. This was my first experience building a website. View it [here](http://forrest-fan.github.io/cogito/).
+
+### Into the Depths
+> December 2016
+
+This was the final project for a Gr. 11 Computer Science class. Made with ProcessingJS. View it [here](http://forrest-fan.github.io/into-the-depths/).

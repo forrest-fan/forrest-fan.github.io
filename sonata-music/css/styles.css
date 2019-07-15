@@ -1,0 +1,136 @@
+:root{
+    --maroonMain: #770C22;
+    --maroonHoverBg: #870c25;
+    --goldMain: #C08D54;
+    --goldHoverText: #e3ad71;
+}
+
+body::-webkit-scrollbar-track {
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar {
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+	width: 6px;
+	border: 2px solid rgba(0, 0, 0, 0);
+	background-clip: padding-box;
+	border-radius: 50px;
+	background-color: var(--goldMain);
+}
+
+#myNavbar {
+	background: white;
+	color: var(--goldMain);
+	padding: 20px;
+}
+
+#navbarSmall {
+	padding: 20px;
+}
+
+#mySidebar {
+	background: white;
+	color: var(--goldMain);
+	font-family: DM Sans;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 1s;
+}
+
+#linksContainer {
+	padding: 20px 50px 0px 50px;
+}
+
+.logoLarge {
+	font-family: Lora;
+	font-size: 40px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.logoMed {
+	font-family: Lora;
+	font-size: 32px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.logoSmall {
+	font-family: Lora;
+	font-size: 25px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.navLine {
+	border-color: var(--maroonMain);
+	border-width: 2px;
+	margin: 5px 48% 0 48%;
+}
+
+.navLink {
+	padding: 20px 20px;
+	font-family: DM Sans;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+.navLink:hover {
+	color: var(--goldHoverText);
+}
+
+.hamburger {
+	font-size: 20px;
+}
+
+.sidebarLink {
+	text-decoration: none;
+	padding: 20px;
+}
+
+#homepageVid {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.headingLarge {
+	font-family: Lora;
+	font-size: 45px;
+}
+
+.headingSmall {
+	font-family: Lora;
+	font-size: 38px;
+}
+
+.buttonMain {
+	background: var(--maroonMain);
+	color: var(--goldMain);
+	padding: 20px 40px;
+	font-family: Lora;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 15px;
+	transition: 0.5s;
+}
+
+.buttonMain:hover {
+	background: var(--maroonHoverBg);
+}
+
+.line {
+	border-color: white;
+	border-width: 2px;
+	margin: 10px 40%;
+}

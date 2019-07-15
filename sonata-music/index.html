@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<title>Sonata Music</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#770C22">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/stylesHome.css">
+<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: 'Lora', serif}
+
+body, html {
+  height: 100%;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-card-4" id="myNavbar">
+    <div class="w3-display-container w3-hide-large" id="navbarSmall">
+      <span class="w3-display-left">
+        <a href="javascript:void(0)" class="w3-hide-large hamburger" onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </span>
+      <span class="w3-center w3-display-middle" onclick="w3_close()">
+        <a href="index.html" class="logoMed w3-hide-large w3-hide-small">SONATA MUSIC</a>
+        <a href="index.html" class="logoSmall w3-hide-large w3-hide-medium">SONATA MUSIC</a>
+      </span> 
+    </div>
+    <!-- Right-sided navbar links -->
+    <div class="w3-hide-small w3-hide-medium w3-center" onclick="w3_close()">
+      <a href="index.html" class="logoLarge w3-hide-small">SONATA MUSIC</a>
+      <div id="linksContainer">
+        <a href="about.html" class="navLink">ABOUT</a>
+        <a href="instruments.html" class="navLink">INSTRUMENTS</a>
+        <a href="lessons.html" class=" navLink">LESSONS</a>
+        <a href="concerts.html" class="navLink">CONCERTS</a>
+        <a href="awards.html" class="navLink">AWARDS</a>
+        <a href="contact.html" class="navLink">CONTACT</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-card-4 w3-animate-left w3-hide-large" style="width: 0px" id="mySidebar" onclick="w3_close()">
+  <a href="about.html" onclick="w3_close()" class="w3-bar-item sidebarLink">ABOUT</a>
+  <a href="instruments.html" onclick="w3_close()" class="w3-bar-item sidebarLink">INSTRUMENTS</a>
+  <a href="lessons.html" onclick="w3_close()" class="w3-bar-item sidebarLink">LESSONS</a>
+  <a href="concerts.html" onclick="w3_close()" class="w3-bar-item sidebarLink">CONCERTS</a>
+  <a href="awards.html" onclick="w3_close()" class="w3-bar-item sidebarLink">AWARDS</a>
+  <a href="contact.html" onclick="w3_close()" class="w3-bar-item sidebarLink">CONTACT</a>
+</nav>
+
+<video autoplay muted loop id="homepageVid" onclick="w3_close()">
+  <source src="mp4/homepageVid.mp4" type="video/mp4">
+</video>
+
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container" id="home" onclick="w3_close()">
+  <div class="w3-display-middle w3-center w3-text-white">
+    <div class="headingLarge w3-hide-small">Toronto's leading music store.</div>
+    <div class="headingSmall w3-hide-large w3-hide-medium">Toronto's leading music store.</div><br>
+    <p><a href="about.html" class="buttonMain">LEARN MORE</a></p>
+  </div>
+</header>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.width = "0px") {
+    mySidebar.style.width = "200px";
+    mySidebar.style.padding = "20px";
+  } else {
+    mySidebar.style.width = "0px";
+    mySidebar.style.padding = "0px";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.width = "0px";
+    mySidebar.style.padding = "0px";
+}
+</script>
+
+</body>
+</html>

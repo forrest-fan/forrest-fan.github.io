@@ -148,6 +148,7 @@ p {
 
 .buttonMain:hover {
 	background: var(--maroonHoverBg);
+	cursor: pointer;
 }
 
 .line {

@@ -22,6 +22,26 @@ body::-webkit-scrollbar-thumb {
 	background-color: var(--goldMain);
 }
 
+h1 {
+	font-family: Lora;
+	font-size: 35px;
+	font-weight: bold;
+	color: var(--goldMain);
+}
+
+h3 {
+	font-family: Lora;
+	font-size: 25px;
+	color: #333;
+}
+
+p {
+	font-family: DM Sans;
+	font-size: 20px;
+	color: black;
+	margin: 0.8em 0;
+}
+
 #myNavbar {
 	background: white;
 	color: var(--goldMain);
@@ -123,6 +143,7 @@ body::-webkit-scrollbar-thumb {
 	text-decoration: none;
 	border-radius: 15px;
 	transition: 0.5s;
+	border: none;
 }
 
 .buttonMain:hover {
@@ -132,5 +153,77 @@ body::-webkit-scrollbar-thumb {
 .line {
 	border-color: white;
 	border-width: 2px;
-	margin: 10px 40%;
+	margin: 10px 43%;
+}
+
+.container {
+	padding: 1.5em 7%;
+	overflow: auto;
+}
+
+.caption {
+	font-size: 17px;
+	margin: 0px;
+	width: 100%;
+	padding: 16px;
+	color: white;
+	background: var(--goldMain);
+}
+
+.footer {
+	background: var(--goldMain);
+	margin-top: 100px;
+}
+
+.footer p{
+	color: white;
+	font-size: 17px;
+}
+
+.formWrap form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.formWrap fieldset {
+    border: none;
+}
+.formWrap label {
+    display: block;
+    padding: 8px 0px;
+}
+.formWrap input:not(.buttonMain) {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    transition: all 0.3s ease;
+    font-family: DM Sans;
+}
+.formWrap input:not(.buttonMain):focus {
+    outline: none;
+    border-bottom: 1px solid var(--goldMain);
+}
+.formWrap textarea {
+    width: 100%;
+    min-height: 100px;
+    resize: none;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+    font-family: DM Sans;
+}
+.formWrap textarea:focus {
+	outline: none;
+	border: 1px solid var(--goldMain);
+}
+
+.contactTable {
+	width: 100%;
+}
+
+.contactTable td{
+	font-family: DM Sans;
+	font-size: 17px;
+	color: black;
 }

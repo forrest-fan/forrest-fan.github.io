@@ -16,20 +16,6 @@ h1,h2,h3,h4,h5,h6 {font-family: 'Lora', serif}
 body, html {
   height: 100%;
 }
-
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  min-height: 80%;
-  background-image: url(img/pianos.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.w3-bar .w3-button {
-  padding: 16px;
-}
 </style>
 <body>
 
@@ -70,24 +56,31 @@ body, html {
   <a href="contact.html" onclick="w3_close()" class="w3-bar-item sidebarLink">CONTACT</a>
 </nav>
 
-<header class="bgimg-1 w3-display-container" id="home" onclick="w3_close()">
-  <div class="w3-center w3-text-white">
-    <div class="headingLarge w3-hide-small w3-display-middle " style="margin-top: 5%">Music Events<hr class="line"></div>
-    <div class="headingSmall w3-hide-large w3-hide-medium w3-display-middle ">Music Events<hr class="line"></div>
-    
-  </div>
-</header>
-
-<div class="container">
-  <h3 class="w3-center">Sonata Music hosts numerous events throughout the year to showcase ...</h3>
-  <div>
-    <h1 class="w3-center">Christmas Concert</h1>
-    <p class="w3-center" style="font-weight:bold">December 25, Sonata Music, 7pm</p>
-    <div class="w3-padding-large w3-col l6 m6 s12" style="float:left">
-      <img src="img/christmas.jpg" width="100%"/>
+<div class="container noHeader">
+  <h1 class="w3-center">Used Pianos</h1>
+  <p class="w3-center">Please call Sonata Music at <span class="accent">416-609-0888</span> to see which models we have in stock. You are also welcome to visit our showroom at <span class="accent">3477 Kennedy Road</span> to view our collection of instruments.</p>
+  <div class="productCard" style="overflow:auto">
+    <img class="w3-col l4 m4 s12" src="img/piano1.jpg" width="100%"/>
+    <div class="w3-col l8 m8 s12 w3-padding">
+      <p style="font-weight: bold">Yamaha Pianos</p>
+      <p>Yamaha is the leading piano producer in the world and has been building quality pianos for 50 years ...</p>
+      <p>Sonata Music offers a large variety of Yamaha pianos, including the U1H, U2H, and the UX. Please call to ask about our available models.</p>
     </div>
-    <div class="w3-padding-large w3-col l6 m6 s12" style="float:left">
-      <p>The Christmas concert ....</p>
+  </div>
+  <div class="productCard" style="overflow:auto">
+    <img class="w3-col l4 m4 s12" src="img/piano1.jpg" width="100%"/>
+    <div class="w3-col l8 m8 s12 w3-padding">
+      <p style="font-weight: bold">Kawai Pianos</p>
+      <p>Kawai pianos ...</p>
+      <p>Sonata Music offers numerous different Kawai models, such as the BL71 and the BL61. Please call to ask about our available models.</p>
+    </div>
+  </div>
+  <div class="productCard" style="overflow:auto">
+    <img class="w3-col l4 m4 s12" src="img/piano1.jpg" width="100%"/>
+    <div class="w3-col l8 m8 s12 w3-padding">
+      <p style="font-weight: bold">Apollo Pianos</p>
+      <p>Apollo pianos ...</p>
+      <p>Sonata Music offers the A320 and the A11K. Please call to ask about the availability of these models.</p>
     </div>
   </div>
 </div>

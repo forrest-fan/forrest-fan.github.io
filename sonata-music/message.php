@@ -6,7 +6,7 @@ echo "<link rel='stylesheet' type='text/css' href='css/styles.css'/>";
 echo "<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lora&display=swap'/>";
 echo "<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=DM+Sans&display=swap'/>";
 echo "<link rel='icon' href='img/logo.png'/>";
-$myemail = "info@sonatamusic.net";
+$myemail = "forrest.c.fan@gmail.com";
 $subject = "Message from website";
 $name = $_POST['name'];
 $email = $_POST['email'];

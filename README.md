@@ -2,6 +2,11 @@
 
 A collection of all the website projects I've worked on. They are all done with HTML, CSS, JS, and/or PHP.
 
+### Sonata Music
+> August 2019
+
+A website redesign for Sonata Music. View it [here](http://forrest-fan.github.io/sonata-music/).
+
 ### Greenback
 > January 2018
 

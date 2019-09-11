@@ -1,10 +1,3 @@
-:root{
-    --maroonMain: #770C22;
-    --maroonHoverBg: #870c25;
-    --goldMain: #C08D54;
-    --goldHoverText: #e3ad71;
-}
-
 body::-webkit-scrollbar-track {
 	background-color: #F5F5F5;
 }
@@ -19,14 +12,14 @@ body::-webkit-scrollbar-thumb {
 	border: 2px solid rgba(0, 0, 0, 0);
 	background-clip: padding-box;
 	border-radius: 50px;
-	background-color: var(--goldMain);
+	background-color: #C08D54;
 }
 
 h1 {
 	font-family: Lora;
 	font-size: 35px;
 	font-weight: bold;
-	color: var(--goldMain);
+	color: #C08D54;
 }
 
 h3 {
@@ -34,6 +27,12 @@ h3 {
 	font-size: 25px;
 	color: #555;
 	font-weight: bold;
+}
+
+@media (min-width: 1324px) {
+	h3 {
+		padding: 0px 15%;
+	}
 }
 
 h4 {
@@ -60,7 +59,11 @@ li {
 
 .accent {
 	font-weight: bold;
-	color: var(--goldMain);
+	color: #C08D54;
+}
+
+.chinese {
+	font-family: Noto Sans SC;
 }
 
 a:hover {
@@ -69,7 +72,7 @@ a:hover {
 
 #myNavbar {
 	background: white;
-	color: var(--goldMain);
+	color: #C08D54;
 	padding: 20px;
 }
 
@@ -79,7 +82,7 @@ a:hover {
 
 #mySidebar {
 	background: white;
-	color: var(--goldMain);
+	color: #C08D54;
 	font-family: DM Sans;
 	font-weight: bold;
 	font-size: 20px;
@@ -112,7 +115,7 @@ a:hover {
 }
 
 .navLine {
-	border-color: var(--maroonMain);
+	border-color: #770C22;
 	border-width: 2px;
 	margin: 5px 48% 0 48%;
 }
@@ -128,11 +131,20 @@ a:hover {
 }
 
 .navLink:hover {
-	color: var(--goldHoverText);
+	color: #e3ad71;
 }
 
 .hamburger {
 	font-size: 20px;
+}
+
+.language {
+	padding: 10px;
+	font-size: 15px;
+}
+
+.language a {
+	text-decoration: none;
 }
 
 .sidebarLink {
@@ -142,10 +154,10 @@ a:hover {
 
 #homepageVid {
   position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .headingLarge {
@@ -155,15 +167,13 @@ a:hover {
 
 .headingSmall {
 	font-family: Lora;
-	font-size: 38px;
+	font-size: 25px;
 }
 
 .buttonMain {
-	background: var(--maroonMain);
-	color: var(--goldMain);
-	padding: 20px 40px;
+	background: #770C22;
+	color: #C08D54;
 	font-family: Lora;
-	font-size: 20px;
 	font-weight: bold;
 	text-decoration: none;
 	border-radius: 15px;
@@ -172,7 +182,7 @@ a:hover {
 }
 
 .buttonMain:hover {
-	background: var(--maroonHoverBg);
+	background: #870c25;
 	cursor: pointer;
 }
 
@@ -181,6 +191,15 @@ a:hover {
 	border-width: 2px;
 	margin: 10px 43%;
 }
+
+.homeHead {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url(../img/homeback.jpg);
+}
+
 @media (min-width: 1061px) {
 	.container {
 		padding: 1.5em 19%;
@@ -193,8 +212,12 @@ a:hover {
 		margin: 0 -12%;
 		overflow: auto;
 	}
-	.productCard {
-		margin: 20px -12%;
+	.homeHead {
+		min-height: 80%;
+	}
+	.buttonMain {
+		font-size: 20px;
+		padding: 20px 40px;
 	}
 }
 @media (min-width: 601px) and (max-width: 1060px) {
@@ -209,8 +232,15 @@ a:hover {
 		margin: 0 -8%;
 		overflow: auto;
 	}
-	.productCard {
-		margin: 20px -8%;
+	.homeHead {
+		min-height: 60%;
+	}
+	.buttonMain {
+		font-size: 20px;
+		padding: 20px 40px;
+	}
+	#homepageVid {
+		height: 50%;
 	}
 }
 @media (max-width: 600px) {
@@ -225,8 +255,15 @@ a:hover {
 		margin: 0 -5%;
 		overflow: auto;
 	}
-	.productCard {
-		margin: 20px -5%;
+	.homeHead {
+		min-height: 50%;
+	}
+	.buttonMain {
+		font-size: 15px;
+		padding: 12px 20px;
+	}
+	#homepageVid {
+		height: 45%;
 	}
 }
 
@@ -254,11 +291,11 @@ a:hover {
 	width: 100%;
 	padding: 16px;
 	color: white;
-	background: var(--goldMain);
+	background: #C08D54;
 }
 
 .footer {
-	background: var(--goldMain);
+	background: #C08D54;
 	margin-top: 50px;
 }
 
@@ -288,7 +325,7 @@ a:hover {
 }
 .formWrap input:not(.buttonMain):focus {
     outline: none;
-    border-bottom: 1px solid var(--goldMain);
+    border-bottom: 1px solid #C08D54;
 }
 .formWrap textarea {
     width: 100%;
@@ -302,7 +339,7 @@ a:hover {
 }
 .formWrap textarea:focus {
 	outline: none;
-	border: 1px solid var(--goldMain);
+	border: 1px solid #C08D54;
 }
 
 .contactTable {
@@ -313,4 +350,22 @@ a:hover {
 	font-family: DM Sans;
 	font-size: 17px;
 	color: black;
+}
+
+.youtubecontainer {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+}
+
+.youtube {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#home {
+	transition: 0.5s;
 }

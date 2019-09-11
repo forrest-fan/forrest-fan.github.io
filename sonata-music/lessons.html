@@ -51,11 +51,11 @@ body, html {
     <div class="w3-hide-small w3-hide-medium w3-center" onclick="w3_close()">
       <a href="index.html" class="logoLarge w3-hide-small">SONATA MUSIC</a>
       <div id="linksContainer">
-        <a href="about.html" class="navLink">ABOUT</a>
         <a href="products.html" class="navLink">PRODUCTS</a>
         <a href="lessons.html" class=" navLink">LESSONS</a>
         <a href="events.html" class="navLink">EVENTS</a>
         <a href="contact.html" class="navLink">CONTACT</a>
+        <a href="index.html" class="navLink">ABOUT</a>
       </div>
     </div>
   </div>
@@ -63,51 +63,64 @@ body, html {
 
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-card-4 w3-animate-left w3-hide-large" style="width: 0px" id="mySidebar" onclick="w3_close()">
-  <a href="about.html" onclick="w3_close()" class="w3-bar-item sidebarLink">ABOUT</a>
   <a href="products.html" onclick="w3_close()" class="w3-bar-item sidebarLink">PRODUCTS</a>
   <a href="lessons.html" onclick="w3_close()" class="w3-bar-item sidebarLink">LESSONS</a>
   <a href="events.html" onclick="w3_close()" class="w3-bar-item sidebarLink">EVENTS</a>
   <a href="contact.html" onclick="w3_close()" class="w3-bar-item sidebarLink">CONTACT</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item sidebarLink">ABOUT</a>
 </nav>
 
 <header class="bgimg-1 w3-display-container" id="home" onclick="w3_close()">
   <div class="w3-center w3-text-white">
-    <div class="headingLarge w3-hide-small w3-display-middle " style="margin-top: 5%">Music Lessons<hr class="line"></div>
+    <div class="headingLarge w3-hide-small w3-display-middle " style="margin-top: 3%">Music Lessons<hr class="line"></div>
     <div class="headingSmall w3-hide-large w3-hide-medium w3-display-middle ">Music Lessons<hr class="line"></div>
     
   </div>
 </header>
 
-<div class="container">
+<div class="container" onclick="w3_close()">
   <div>
     <h3 class="w3-center">Sonata Music offers a variety of lessons for students of all ages and skill levels.</h3>
     <img src="img/lessons2.jpg" width="70%" style="display:block; margin:40px auto 0 auto; border-radius: 20px"/>
-    <p class="w3-center">We believe that the ideal music education includes both individual and ensemble learning and performance opportunities. With a deep understanding of the multitude of benefits of both private and group lessons, Sonata music caters to students’ needs and preferences and offers both learning opportunities. As students begin to understand the basic music principles, they are then encourages to branch or expand their musical skills into other areas and instruments.</p>
+    <p>We believe that the ideal music education includes both individual and ensemble learning and performance opportunities. With a deep understanding of the multitude of benefits of both private and group lessons, Sonata music caters to students’ needs and preferences and offers both learning opportunities. As students begin to understand the basic music principles, they are then encouraged to branch or expand their musical skills into other areas and instruments.</p>
   </div>
   <div>
     <div>
       <h1 class="w3-center">Group Lessons</h1>
       <img src="img/groupclass.jpg" width="70%" style="display:block; margin:10px auto; border-radius: 20px"/>
-      <p class="w3-center">Benefits of group lessons include: improvement in collaborative and communication skills, learning in an enjoyable, stimulating and socially interactive environment, exposure to diverse musical sounds and combinations, a significant reduction of fear and inhibition for public performance, and a higher “enjoyment” level. We recommend beginner students to take group lessons or join ensemble classes to enrich their early music-learning experience.</p>
+      <p>Benefits of group lessons include: improvement in collaborative and communication skills, learning in an enjoyable, stimulating and socially interactive environment, exposure to diverse musical sounds and combinations, a significant reduction of fear and inhibition for public performance, and a higher “enjoyment” level. We recommend beginner students to take group lessons or join ensemble classes to enrich their early music-learning experience.</p>
       <li>Children Music Course (Ages 3 - 5)</li>
       <li>Piano Beginner Join Course (Age 5+)</li>
-      <li>Music Theory Course (Rudiments, History, Counterpoint)</li>
+      <li>Music Theory Courses</li>
+      <ol style="list-style-type: circle; padding-bottom: 0;">
+        <li style="margin-left:2em">Levels 1-8: Music Theory</li>
+        <li style="margin-left:2em;">Levels 9 & 10: Music History</li>
+        <li style="margin-left:2em;">Levels 9 & 10: Harmony</li>
+        <li style="margin-left:2em;">ARCT: Music History</li>
+        <li style="margin-left:2em;">ARCT: Harmony & Counterpoint</li>
+        <li style="margin-left:2em;">ARCT: Analysis</li>
+      </ol>
     </div>
     <div>
       <h1 class="w3-center">Private Lessons</h1>
       <img src="img/privateclass.jpg" width="70%" style="display:block; margin:10px auto; border-radius: 20px"/>
-      <p class="w3-center">Private lessons are also an excellent way to train for technical proficiency and performance. Students can learn the principles and techniques through a customized curriculum, which will help with information retention. The focus and strength of one-on-one interaction helps cultivate confidence as the lesson focuses on the individual student. This is particularly important for students who intend to pursue a career in music performance or instruction.</p>
-      <li>Levels 1 to 10</li>
-      <li>ARCT</li>
-      <li>Private Studio Practice</li>
+      <p>Private lessons are also an excellent way to train for technical proficiency and performance. Students can learn the principles and techniques through a customized curriculum, which will help with information retention. The focus and strength of one-on-one interaction helps cultivate confidence as the lesson focuses on the individual student. This is particularly important for students who intend to pursue a career in music performance or instruction.</p>
+      <li style="margin-left:2em">Piano</li>
+      <li style="margin-left:2em;">Violin</li>
+      <li style="margin-left:2em;">Viola</li>
+      <li style="margin-left:2em;">Cello</li>
+      <li style="margin-left:2em;">Flute</li>
+      <li style="margin-left:2em;">Trumpet</li>
+      <li style="margin-left:2em;">Saxophone</li>
+      <li style="margin-left:2em;">Guitar</li>
     </div>
   </div>
 </div>
 
-<div class="footer w3-center container" >
+<div class="footer w3-center container" onclick="w3_close()" >
   <p>&copy Sonata Music 2019</p>
   <br>
-  <p>3477 Kennedy Road, Unit 3</p>
+  <p>3477 Kennedy Road, Unit 3, Scarborough, ON</p>
   <p>416-609-0888</p>
 </div>
 

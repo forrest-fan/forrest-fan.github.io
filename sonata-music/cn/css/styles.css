@@ -1,0 +1,374 @@
+body::-webkit-scrollbar-track {
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar {
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+	width: 6px;
+	border: 2px solid rgba(0, 0, 0, 0);
+	background-clip: padding-box;
+	border-radius: 50px;
+	background-color: #C08D54;
+}
+
+h1 {
+	font-family: Noto Sans SC;
+	font-size: 35px;
+	font-weight: bold;
+	color: #C08D54;
+}
+
+h3 {
+	font-family: Noto Sans SC;
+	font-size: 25px;
+	color: #555;
+	font-weight: bold;
+}
+
+@media (min-width: 1324px) {
+	h3 {
+		padding: 0px 15%;
+	}
+}
+
+h4 {
+	font-family: Noto Sans SC;
+	font-size: 24px;
+	color: black;
+	font-weight: bold;
+}
+
+p {
+	font-family: Noto Sans SC;
+	font-size: 22px;
+	color: black;
+	margin: 0.8em 0;
+}
+
+li {
+	font-family: Noto Sans SC;
+	font-size: 22px;
+	color: black;
+	margin: 0.5em 0;
+	font-weight: bold;
+}
+
+.accent {
+	font-weight: bold;
+	color: #C08D54;
+}
+
+.english {
+	font-family: DM Sans;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+#myNavbar {
+	background: white;
+	color: #C08D54;
+	padding: 20px;
+}
+
+#navbarSmall {
+	padding: 20px;
+}
+
+#mySidebar {
+	background: white;
+	color: #C08D54;
+	font-family: Noto Sans SC;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 1s;
+}
+
+#linksContainer {
+	padding: 20px 50px 0px 50px;
+}
+
+.logoLarge {
+	font-family: Noto Sans SC;
+	font-size: 40px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.logoMed {
+	font-family: Noto Sans SC;
+	font-size: 32px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.logoSmall {
+	font-family: Noto Sans SC;
+	font-size: 25px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.navLine {
+	border-color: #770C22;
+	border-width: 2px;
+	margin: 5px 48% 0 48%;
+}
+
+.navLink {
+	padding: 20px 20px;
+	font-family: DM Sans;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+.navLink:hover {
+	color: #e3ad71;
+}
+
+.hamburger {
+	font-size: 20px;
+}
+
+.language {
+	padding: 10px;
+	font-size: 15px;
+}
+
+.language a {
+	text-decoration: none;
+}
+
+.sidebarLink {
+	text-decoration: none;
+	padding: 20px;
+}
+
+#homepageVid {
+  position: fixed;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.headingLarge {
+	font-family: Lora;
+	font-size: 45px;
+	font-weight: bold;
+}
+
+.headingSmall {
+	font-family: Lora;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.buttonMain {
+	background: #770C22;
+	color: #C08D54;
+	font-family: Lora;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 15px;
+	transition: 0.5s;
+	border: none;
+}
+
+.buttonMain:hover {
+	background: #870c25;
+	cursor: pointer;
+}
+
+.line {
+	border-color: white;
+	border-width: 2px;
+	margin: 10px 43%;
+}
+
+.homeHead {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url(../../img/homeback.jpg);
+}
+
+@media (min-width: 1061px) {
+	.container {
+		padding: 1.5em 19%;
+		overflow: auto;
+	}
+	.noHeader {
+		margin-top: 140px;
+	}
+	.negative-container {
+		margin: 0 -12%;
+		overflow: auto;
+	}
+	.homeHead {
+		min-height: 80%;
+	}
+	.buttonMain {
+		font-size: 20px;
+		padding: 20px 40px;
+	}
+}
+@media (min-width: 601px) and (max-width: 1060px) {
+	.container {
+		padding: 1.5em 12%;
+		overflow: auto;
+	}
+	.noHeader {
+		margin-top: 70px;
+	}
+	.negative-container {
+		margin: 0 -8%;
+		overflow: auto;
+	}
+	.homeHead {
+		min-height: 50%;
+	}
+	.buttonMain {
+		font-size: 20px;
+		padding: 20px 40px;
+	}
+	#homepageVid {
+		height: 50%;
+	}
+}
+@media (max-width: 600px) {
+	.container {
+		padding: 1.5em 7%;
+		overflow: auto;
+	}
+	.noHeader {
+		margin-top: 70px;
+	}
+	.negative-container {
+		margin: 0 -5%;
+		overflow: auto;
+	}
+	.homeHead {
+		min-height: 50%;
+	}
+	.buttonMain {
+		font-size: 15px;
+		padding: 12px 20px;
+	}
+	#homepageVid {
+		height: 45%;
+	}
+}
+
+.productContainer {
+	transition: 0.5s;
+	padding: 5px;
+}
+
+.productLink {
+	font-family: Lora;
+	font-size: 28px;
+	color: white;
+	text-decoration: none;
+	margin: 0;
+}
+
+.productCard {
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	border-radius: 20px;
+}
+
+.caption {
+	font-size: 17px;
+	margin: 0px;
+	width: 100%;
+	padding: 16px;
+	color: white;
+	background: #C08D54;
+}
+
+.footer {
+	background: #C08D54;
+	margin-top: 50px;
+}
+
+.footer p{
+	color: white;
+	font-size: 17px;
+}
+
+.formWrap form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.formWrap fieldset {
+    border: none;
+}
+.formWrap label {
+    display: block;
+    padding: 8px 0px;
+}
+.formWrap input:not(.buttonMain) {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    transition: all 0.3s ease;
+    font-family: DM Sans;
+}
+.formWrap input:not(.buttonMain):focus {
+    outline: none;
+    border-bottom: 1px solid #C08D54;
+}
+.formWrap textarea {
+    width: 100%;
+    min-height: 100px;
+    resize: none;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+    font-family: DM Sans;
+}
+.formWrap textarea:focus {
+	outline: none;
+	border: 1px solid #C08D54;
+}
+
+.contactTable {
+	width: 100%;
+}
+
+.contactTable td{
+	font-family: DM Sans;
+	font-size: 17px;
+	color: black;
+}
+
+.youtubecontainer {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0;
+}
+
+.youtube {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#home {
+	transition: 0.5s;
+}

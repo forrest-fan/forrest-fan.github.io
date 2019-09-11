@@ -37,11 +37,11 @@ body, html {
     <div class="w3-hide-small w3-hide-medium w3-center" onclick="w3_close()">
       <a href="index.html" class="logoLarge w3-hide-small">SONATA MUSIC</a>
       <div id="linksContainer">
-        <a href="about.html" class="navLink">ABOUT</a>
         <a href="products.html" class="navLink">PRODUCTS</a>
         <a href="lessons.html" class=" navLink">LESSONS</a>
         <a href="events.html" class="navLink">EVENTS</a>
         <a href="contact.html" class="navLink">CONTACT</a>
+        <a href="index.html" class="navLink">ABOUT</a>
       </div>
     </div>
   </div>
@@ -49,43 +49,46 @@ body, html {
 
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-card-4 w3-animate-left w3-hide-large" style="width: 0px" id="mySidebar" onclick="w3_close()">
-  <a href="about.html" onclick="w3_close()" class="w3-bar-item sidebarLink">ABOUT</a>
   <a href="products.html" onclick="w3_close()" class="w3-bar-item sidebarLink">PRODUCTS</a>
   <a href="lessons.html" onclick="w3_close()" class="w3-bar-item sidebarLink">LESSONS</a>
   <a href="events.html" onclick="w3_close()" class="w3-bar-item sidebarLink">EVENTS</a>
   <a href="contact.html" onclick="w3_close()" class="w3-bar-item sidebarLink">CONTACT</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item sidebarLink">ABOUT</a>
 </nav>
 
-<div class="container noHeader">
+<div class="container noHeader" onclick="w3_close()">
   <h1 class="w3-center">Used Pianos</h1>
-  <p class="w3-center">Please call Sonata Music at <span class="accent">416-609-0888</span> to see which models we have in stock. You are also welcome to visit our showroom at <span class="accent">3477 Kennedy Road</span> to view our collection of instruments.</p>
-  <div class="productCard" style="overflow:auto">
-    <img class="w3-col l4 m4 s12" src="img/yamaha.jpg" width="100%"/>
-    <div class="w3-col l8 m8 s12 w3-padding">
-      <h4>Yamaha Pianos</h4>
-      <p>Sonata Music offers a large variety of Yamaha pianos, including the U1H, U2H, and the UX. Please call to ask about our available models.</p>
-    </div>
-  </div>
-  <div class="productCard" style="overflow:auto">
-    <img class="w3-col l4 m4 s12" src="img/kawai.jpg" width="100%"/>
-    <div class="w3-col l8 m8 s12 w3-padding">
-      <h4>Kawai Pianos</h4>
-      <p>Sonata Music offers numerous different Kawai models, such as the BL71 and the BL61. Please call to ask about our available models.</p>
-    </div>
-  </div>
-  <div class="productCard" style="overflow:auto">
-    <img class="w3-col l4 m4 s12" src="img/apollo.jpg" width="100%"/>
-    <div class="w3-col l8 m8 s12 w3-padding">
-      <h4>Apollo Pianos</h4>
-      <p>Sonata Music offers the A320 and the A11K. Please call to ask about the availability of these models.</p>
-    </div>
+  <p>Please call us to see which models we have in stock. You are also welcome to visit our showroom to view our collection of instruments.</p>
+  <div class="w3-col l6 m6 s12 w3-padding">
+    <div class="productCard" style="overflow:auto">
+       <img src="img/yamaha.jpg" width="100%"/>
+       <div class="w3-padding">
+         <h4>Yamaha Pianos</h4>
+       </div>
+     </div>
+   </div>
+   <div class="w3-col l6 m6 s12 w3-padding">
+     <div class="productCard" style="overflow:auto;">
+       <img src="img/kawai.jpg" width="100%"/>
+       <div class="w3-padding">
+         <h4>Kawai Pianos</h4>
+       </div>
+     </div>
+   </div>
+   <div class="w3-col l6 m6 s12 w3-padding">
+     <div class="productCard" style="overflow:auto;">
+       <img src="img/apollo.jpg" width="100%"/>
+       <div class="w3-padding">
+         <h4>Apollo Pianos</h4>
+        </div>
+     </div>
   </div>
 </div>
 
-<div class="footer w3-center container" >
+<div class="footer w3-center container"  onclick="w3_close()">
   <p>&copy Sonata Music 2019</p>
   <br>
-  <p>3477 Kennedy Road, Unit 3</p>
+  <p>3477 Kennedy Road, Unit 3, Scarborough, ON</p>
   <p>416-609-0888</p>
 </div>
 

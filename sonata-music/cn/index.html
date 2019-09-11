@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+<title>聲逹琴行</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#C08D54">
+<link rel="stylesheet" href="../css/w3.css">
+<link rel="stylesheet" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="../img/logo.png">
+<style>
+
+body, html {
+  height: 100%;
+  font-family: Noto Sans SC;
+}
+
+/* Full height image header */
+
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-card-4" id="myNavbar">
+    <div class="w3-display-container w3-hide-large" id="navbarSmall">
+      <span class="w3-display-left">
+        <a href="javascript:void(0)" class="w3-hide-large hamburger" onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </span>
+      <span class="w3-center w3-display-middle" onclick="w3_close()">
+        <a href="index.html" class="logoMed w3-hide-large w3-hide-small">聲達琴行</a>
+        <a href="index.html" class="logoSmall w3-hide-large w3-hide-medium">聲達琴行</a>
+      </span> 
+    </div>
+    <!-- Right-sided navbar links -->
+    <div class="w3-hide-small w3-hide-medium w3-center" onclick="w3_close()">
+      <a href="index.html" class="logoLarge w3-hide-small">聲達琴行</a>
+      <div id="linksContainer">
+        <a href="../products.html" class="navLink">樂器</a>
+        <a href="../lessons.html" class=" navLink">課程</a>
+        <a href="../events.html" class="navLink">活動</a>
+        <a href="../contact.html" class="navLink">联系</a>
+        <a href="index.html" class="navLink">关于我们</a>
+      </div>
+    </div>
+    <span class="w3-display-topright language w3-hide-medium w3-hide-small">
+      <a href="../index.html">ENGLISH</a> | <b><a href=" index.html" class="chinese">中文</a></b>
+    </span>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-card-4 w3-animate-left w3-hide-large" style="width: 0px" id="mySidebar" onclick="w3_close()">
+  <a href="../products.html" onclick="w3_close()" class="w3-bar-item sidebarLink">樂器</a>
+  <a href="../lessons.html" onclick="w3_close()" class="w3-bar-item sidebarLink">課程</a>
+  <a href="../events.html" onclick="w3_close()" class="w3-bar-item sidebarLink">活動</a>
+  <a href="../contact.html" onclick="w3_close()" class="w3-bar-item sidebarLink">联系</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item sidebarLink">关于我们</a>
+  <span class="w3-display-bottomleft language">
+      <a href="../index.html">ENGLISH</a> | <b><a href="index.html" class="chinese">中文</a></b>
+  </span>
+</nav>
+
+
+  <video style="z-index:-1" loop id="homepageVid" class="noHeader" onclick="w3_close()">
+  <source src="http://sonatamusic.net/mp4/about.mp4" type="video/mp4">
+</video>
+
+<!-- Header with full-height image -->
+<header class="homeHead w3-display-container" id="home" onclick="w3_close(); vidControl()">
+  <div class="w3-display-middle w3-center w3-text-white">
+    <div class="headingLarge w3-hide-small" style="margin-top:3%">关于聲達琴行</div>
+    <div class="headingSmall w3-hide-large w3-hide-medium">关于聲達琴行</div><br>
+    <a class="buttonMain">播放视频</a>
+  </div>
+</header>
+
+
+<div class="container" style="background:white; margin-bottom: -50px" onclick="w3_close()">
+  <h1 class="w3-center">聲達琴行</h1>
+  <p>聲達琴行服務大多倫多地區超過二十年，直接入口全新及  二手日本優質鋼琴Toyo, Apollo, Yamaha, Kawai，以優良的品質和貼心的服務，贏得客戶的信任和好評。聲達琴行也銷售音樂書籍、吉他、長笛、小號、黑管、萨克斯、提琴。</p>
+  <h1 class="w3-center">聲達音樂學校</h1>
+  <p>聲達音樂學校擁有豐富經驗的專業音樂老師。教授鋼琴，小提琴，中提琴，大提琴，長笛，吉他，小號，聲樂及音樂理論，音樂史。所有課程按一對一或小班靈活定制。學生在老師的嚴格訓練下，能短時間內掌握樂器技巧和理論知識，打下結實的音樂基礎。並同時培養學生從小堅毅謙逊之學習態度和合作精神。聲達老師均經嚴格挑選， 其音樂造詣上乘，多為名家。聲達學生一律獲保送皇家音樂學院考試。每年舉行學生匯報音樂會，以鼓勵學生獲得更理想成績。</p>
+</div>
+
+<div class="footer w3-center container"  onclick="w3_close()">
+  <p>&copy 聲逹琴行 2019</p>
+  <br>
+  <p>3477 Kennedy Road, Unit 3, Scarborough, ON</p>
+  <p>416-609-0888</p>
+</div>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.width = "0px") {
+    mySidebar.style.width = "200px";
+    mySidebar.style.padding = "20px";
+  } else {
+    mySidebar.style.width = "0px";
+    mySidebar.style.padding = "0px";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.width = "0px";
+    mySidebar.style.padding = "0px";
+}
+
+var homeVid = document.getElementById("homepageVid");
+var homeContent = document.getElementById("home");
+var vidCounter = 0;
+
+function vidControl() {
+  if (vidCounter % 2 == 0) {
+    homeVid.play();
+    home.style.opacity = "0";
+  } else {
+    homeVid.pause();
+    home.style.opacity = "1";
+  }
+
+  vidCounter++;
+}
+
+</script>
+
+</body>
+</html>

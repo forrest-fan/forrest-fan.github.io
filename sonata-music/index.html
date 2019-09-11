@@ -1,13 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <title>Sonata Music</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#770C22">
+<meta name="theme-color" content="#C08D54">
 <link rel="stylesheet" href="css/w3.css">
-<link rel="stylesheet" href="css/stylesHome.css">
+<link rel="stylesheet" href="css/styles.css">
 <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="img/logo.png">
 <style>
@@ -18,11 +19,7 @@ body, html {
 }
 
 /* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  min-height: 100%;
-}
+
 
 .w3-bar .w3-button {
   padding: 16px;
@@ -48,38 +45,60 @@ body, html {
     <div class="w3-hide-small w3-hide-medium w3-center" onclick="w3_close()">
       <a href="index.html" class="logoLarge w3-hide-small">SONATA MUSIC</a>
       <div id="linksContainer">
-        <a href="about.html" class="navLink">ABOUT</a>
         <a href="products.html" class="navLink">PRODUCTS</a>
         <a href="lessons.html" class=" navLink">LESSONS</a>
         <a href="events.html" class="navLink">EVENTS</a>
         <a href="contact.html" class="navLink">CONTACT</a>
+        <a href="index.html" class="navLink">ABOUT</a>
       </div>
     </div>
+    <span class="w3-display-topright language w3-hide-medium w3-hide-small">
+      <b><a href="index.html">ENGLISH</a></b> | <a href=" cn/index.html" class="chinese">中文</a>
+    </span>
   </div>
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-card-4 w3-animate-left w3-hide-large" style="width: 0px" id="mySidebar" onclick="w3_close()">
-  <a href="about.html" onclick="w3_close()" class="w3-bar-item sidebarLink">ABOUT</a>
   <a href="products.html" onclick="w3_close()" class="w3-bar-item sidebarLink">PRODUCTS</a>
   <a href="lessons.html" onclick="w3_close()" class="w3-bar-item sidebarLink">LESSONS</a>
   <a href="events.html" onclick="w3_close()" class="w3-bar-item sidebarLink">EVENTS</a>
   <a href="contact.html" onclick="w3_close()" class="w3-bar-item sidebarLink">CONTACT</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item sidebarLink">ABOUT</a>
+  <span class="w3-display-bottomleft language">
+      <b><a href="index.html">ENGLISH</a></b> | <a href="cn/index.html" class="chinese">中文</a>
+  </span>
 </nav>
 
-<video autoplay muted loop id="homepageVid" onclick="w3_close()">
-  <source src="mp4/homeVid.mp4" type="video/mp4">
+
+  <video style="z-index:-1" loop id="homepageVid" class="noHeader" onclick="w3_close()">
+  <source src="http://sonatamusic.net/mp4/about.mp4" type="video/mp4">
 </video>
 
-
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container" id="home" onclick="w3_close()">
+<header class="homeHead w3-display-container" id="home" onclick="w3_close(); vidControl()">
   <div class="w3-display-middle w3-center w3-text-white">
-    <div class="headingLarge w3-hide-small">Toronto's leading music store.</div>
-    <div class="headingSmall w3-hide-large w3-hide-medium">Toronto's leading music store.</div><br>
-    <p><a href="about.html" class="buttonMain">LEARN MORE</a></p>
+    <div class="headingLarge w3-hide-small" style="margin-top:3%">About Sonata Music</div>
+    <div class="headingSmall w3-hide-large w3-hide-medium">About Sonata Music</div><br>
+    <a class="buttonMain">PLAY VIDEO</a>
   </div>
 </header>
+
+
+<div class="container" style="background:white; margin-bottom: -50px" onclick="w3_close()">
+  <h3 class="w3-center">Music is a universal language with the potential to inspire and connect millions of people.</h3>
+  <p>This exact belief embodies Sonata Music’s philosophy&#8212;to provide students with an opportunity to build a relationship with music.</p>
+  <p>Sonata Music has been a predominant music store in Toronto since its opening in 1998. We pride ourselves in not only product quality but also artistic enrichment.</p>
+  <p>Since its founding, the dedicated staff have consistently strived to enrich their students’ musical education through interactive teaching and artistic freedom. Music education encourages the development of both soft and technical skills, allowing students to develop fundamental attributes that will assist them in the future for any type of education or work. This includes communication skills, self-discipline, work ethic, and collaborative skills.</p>
+  <p>With a strong community connected over music, Sonata Music operates as both a music store and a school, where students have the freedom to learn music and discover their inner artist.</p>
+</div>
+
+<div class="footer w3-center container"  onclick="w3_close()">
+  <p>&copy Sonata Music 2019</p>
+  <br>
+  <p>3477 Kennedy Road, Unit 3, Scarborough, ON</p>
+  <p>416-609-0888</p>
+</div>
 
 <script>
 // Modal Image Gallery
@@ -109,6 +128,23 @@ function w3_close() {
     mySidebar.style.width = "0px";
     mySidebar.style.padding = "0px";
 }
+
+var homeVid = document.getElementById("homepageVid");
+var homeContent = document.getElementById("home");
+var vidCounter = 0;
+
+function vidControl() {
+  if (vidCounter % 2 == 0) {
+    homeVid.play();
+    home.style.opacity = "0";
+  } else {
+    homeVid.pause();
+    home.style.opacity = "1";
+  }
+
+  vidCounter++;
+}
+
 </script>
 
 </body>

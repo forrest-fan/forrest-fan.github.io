@@ -37,11 +37,11 @@ body, html {
     <div class="w3-hide-small w3-hide-medium w3-center" onclick="w3_close()">
       <a href="index.html" class="logoLarge w3-hide-small">SONATA MUSIC</a>
       <div id="linksContainer">
-        <a href="about.html" class="navLink">ABOUT</a>
         <a href="products.html" class="navLink">PRODUCTS</a>
         <a href="lessons.html" class=" navLink">LESSONS</a>
         <a href="events.html" class="navLink">EVENTS</a>
         <a href="contact.html" class="navLink">CONTACT</a>
+        <a href="index.html" class="navLink">ABOUT</a>
       </div>
     </div>
   </div>
@@ -49,36 +49,29 @@ body, html {
 
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-card-4 w3-animate-left w3-hide-large" style="width: 0px" id="mySidebar" onclick="w3_close()">
-  <a href="about.html" onclick="w3_close()" class="w3-bar-item sidebarLink">ABOUT</a>
   <a href="products.html" onclick="w3_close()" class="w3-bar-item sidebarLink">PRODUCTS</a>
   <a href="lessons.html" onclick="w3_close()" class="w3-bar-item sidebarLink">LESSONS</a>
   <a href="events.html" onclick="w3_close()" class="w3-bar-item sidebarLink">EVENTS</a>
   <a href="contact.html" onclick="w3_close()" class="w3-bar-item sidebarLink">CONTACT</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item sidebarLink">ABOUT</a>
 </nav>
 
-<div class="container noHeader">
-  <h1 class="w3-center">Other Products</h1>
-  <p class="w3-center">All products are available at our showroom at <span class="accent">3477 Kennedy Road</span>. You are welcome to visit and explore the variety of instruments and products we offer at Sonata Music.</p>
+<div class="container noHeader" onclick="w3_close()">
+  <h1 class="w3-center">Music Books</h1>
+  <p>All products are available at our showroom. You are welcome to visit and explore the variety of instruments and products we offer at Sonata Music.</p>
   <div class="productCard" style="overflow:auto">
     <img class="w3-col l4 m4 s12" src="img/books.jpg" width="100%"/>
     <div class="w3-col l8 m8 s12 w3-padding">
       <h4>Music Books</h4>
-      <p>Sonata Music has a collection of RCM books, which are required for exams, as well as Hal Leonard and Alfred books.</p>
-    </div>
-  </div>
-  <div class="productCard" style="overflow:auto">
-    <img class="w3-col l4 m4 s12" src="img/metronomes.jpg" width="100%"/>
-    <div class="w3-col l8 m8 s12 w3-padding">
-      <h4>Metronomes</h4>
-      <p>Sonata Music offers Seiko and Wittner metronomes, in a variety of styles.</p>
+      <p>Sonata Music has a collection of music books, including Hal Leonard and Alfred books, as well as Frederick Harris books, which are required for RCM Exams.</p>
     </div>
   </div>
 </div>
 
-<div class="footer w3-center container" >
+<div class="footer w3-center container" onclick="w3_close()" >
   <p>&copy Sonata Music 2019</p>
   <br>
-  <p>3477 Kennedy Road, Unit 3</p>
+  <p>3477 Kennedy Road, Unit 3, Scarborough, ON</p>
   <p>416-609-0888</p>
 </div>
 

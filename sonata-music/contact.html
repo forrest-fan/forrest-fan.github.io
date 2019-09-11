@@ -37,11 +37,11 @@ body, html {
     <div class="w3-hide-small w3-hide-medium w3-center" onclick="w3_close()">
       <a href="index.html" class="logoLarge w3-hide-small">SONATA MUSIC</a>
       <div id="linksContainer">
-        <a href="about.html" class="navLink">ABOUT</a>
         <a href="products.html" class="navLink">PRODUCTS</a>
         <a href="lessons.html" class=" navLink">LESSONS</a>
         <a href="events.html" class="navLink">EVENTS</a>
         <a href="contact.html" class="navLink">CONTACT</a>
+        <a href="index.html" class="navLink">ABOUT</a>
       </div>
     </div>
   </div>
@@ -49,14 +49,14 @@ body, html {
 
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-card-4 w3-animate-left w3-hide-large" style="width: 0px" id="mySidebar" onclick="w3_close()">
-  <a href="about.html" onclick="w3_close()" class="w3-bar-item sidebarLink">ABOUT</a>
   <a href="products.html" onclick="w3_close()" class="w3-bar-item sidebarLink">PRODUCTS</a>
   <a href="lessons.html" onclick="w3_close()" class="w3-bar-item sidebarLink">LESSONS</a>
   <a href="events.html" onclick="w3_close()" class="w3-bar-item sidebarLink">EVENTS</a>
   <a href="contact.html" onclick="w3_close()" class="w3-bar-item sidebarLink">CONTACT</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item sidebarLink">ABOUT</a>
 </nav>
 
-<div class="container noHeader">
+<div class="container noHeader" onclick="w3_close()">
   <h1 class="w3-center">Contact Us</h1>
   <div class="formWrap" style="margin-bottom:32px">
     <form action="message.php" method="post">
@@ -93,6 +93,10 @@ body, html {
     <p class="text" style="font-weight: bold">Business Hours</p>
     <table class="contactTable">
       <tr>
+        <td width="25%">Sunday:</td>
+        <td>8:30am-7:00pm</td>
+      </tr>
+      <tr>
         <td width="25%">Monday:</td>
         <td>Closed</td>
       </tr>
@@ -114,11 +118,7 @@ body, html {
       </tr>
       <tr>
         <td width="25%">Saturday:</td>
-        <td>9:00am-7:00pm</td>
-      </tr>
-      <tr>
-        <td width="25%">Sunday:</td>
-        <td>9:00am-7:00pm</td>
+        <td>8:30am-7:00pm</td>
       </tr>
     </table>
   </div>
@@ -128,10 +128,10 @@ body, html {
 </div>
 </div>
 
-<div class="footer w3-center container" >
+<div class="footer w3-center container" onclick="w3_close()" >
   <p>&copy Sonata Music 2019</p>
   <br>
-  <p>3477 Kennedy Road, Unit 3</p>
+  <p>3477 Kennedy Road, Unit 3, Scarborough, ON</p>
   <p>416-609-0888</p>
 </div>
 

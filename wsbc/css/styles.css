@@ -1,0 +1,244 @@
+h1 {
+	font-family: Open Sans;
+	font-size: 40px;
+	font-weight: 800;
+}
+
+h2 {
+	font-family: Open Sans;
+	font-size: 30px;
+	font-weight: 800;
+}
+
+h3 {
+	font-family: Open Sans;
+	font-size: 25px;
+	font-weight: 800;
+}
+
+p {
+	font-family: Merriweather;
+	font-size: 17px;
+}
+
+#myNavbar {
+	background: #4F2684;
+	color: #FFFFFF;
+	padding: 0px 20px;
+}
+
+#logoImg {
+	padding: 8px 8px;
+	margin-right: 8px
+}
+
+.nav-item {
+	text-decoration: none;
+	font-size: 16px;
+	transition: 0.3s;
+	font-weight: bold;
+	font-family: Montserrat;
+	letter-spacing: 1.5px;
+}
+
+.nav-item:not(#logo){
+	padding: 20px 15px!important;
+}
+
+.nav-contain:hover {
+	color: #CBBDDE;
+}
+
+.nav-item:hover:not(#logo){
+	color: #FFFFFF;
+}
+
+#mySidebar {
+	background: #FFFFFF;
+	color: #4F2684;
+	transition: 0.4s;
+}
+
+.sidebar-item {
+	font-family: Montserrat;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 8px 40px!important;
+}
+
+.headTextBig {
+	font-family: Open Sans;
+	font-size: 50px;
+	font-weight: 800;
+	letter-spacing: 1.3px;
+	line-height: 1.4;
+}
+
+.headTextSmall {
+	font-family: Open Sans;
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: 1.3px;
+	line-height: 1.4;
+}
+
+.button {
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 1.2px;
+	padding: 18px 24px;
+	background: none;
+	color: #FFFFFF;
+	text-decoration: none;
+	border: 3px solid #FFFFFF;
+	border-radius: 30px;
+	transition: 0.3s;
+}
+
+.button:hover {
+	background: #FFFFFF;
+	color: #4F2684;
+}
+
+@media (min-width: 993px) {
+	.container {
+		margin: 0 10%;
+	}
+	#newsEmail {
+		width: 60%;
+	}
+}
+@media (max-width: 992px) {
+	.container {
+		margin: 0 5%;
+	}
+	#newsEmail {
+		width: 100%;
+	}
+}
+
+.collapse {
+	overflow:auto;
+}
+
+.newsletterLink {
+	text-decoration: none;
+}
+
+.newsletterLink img {
+	filter: grayscale(20%);
+	transition: 0.3s;
+}
+
+.newsletterLink:hover {
+	cursor: pointer;
+}
+
+.newsletterLink:hover h2{
+	color: #4F2684;
+}
+
+.newsletterLink:hover h3{
+	color: #4F2684;
+}
+
+.newsletterLink:hover img{
+	filter: none;
+}
+
+#newsEmail {
+	padding: 5px 12px;
+	font-family: Merriweather;
+	transition: 0.3s;
+}
+
+#newsEmail:focus {
+	outline: none;
+	border: 1px solid #4F2684;
+}
+
+.button2 {
+	font-family: Montserrat;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 1.2px;
+	padding: 12px 20px;
+	background: #4F2684;
+	color: #FFFFFF;
+	text-decoration: none;
+	border: 3px solid #4F2684;
+	border-radius: 30px;
+	transition: 0.3s;
+}
+
+.button2:hover {
+	background: #7444b3;
+	cursor: pointer;
+}
+
+.button3 {
+	font-family: Montserrat;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 1.2px;
+	padding: 12px 20px;
+	background: transparent;
+	color: #4F2684;
+	text-decoration: none;
+	border: 3px solid #4F2684;
+	border-radius: 30px;
+	transition: 0.3s;
+}
+
+.button3:hover {
+	background: #4F2684;
+	color: #FFF;
+	cursor: pointer;
+}
+
+.sqContainer {
+	transition: 0.5s;
+	padding: 5px;
+}
+
+.sqContainer:hover {
+	opacity: 0.8;
+}
+
+.sqlink {
+	color: white;
+}
+
+.text-link {
+	font-family: Merriweather;
+	font-size: 17px;
+	text-decoration: underline;
+	transition: 0.5s;
+}
+
+.text-link:hover {
+	color: #4F2684;
+}
+
+.footerHR {
+	margin: 1em 43%;
+	border: 1.2px solid #777;
+}
+
+.SMLink {
+	font-size: 20px;
+	padding: 5px;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.SMcontain:hover {
+	color: #999;
+}
+
+.SMLink:hover {
+	color: #fff;
+	cursor: pointer;
+}

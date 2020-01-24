@@ -16,6 +16,13 @@ h3 {
 	font-weight: 800;
 }
 
+h4 {
+	font-family: Open Sans;
+	font-size: 26px;
+	font-weight: 800;
+	line-height: 1.3;
+}
+
 p {
 	font-family: Merriweather;
 	font-size: 17px;
@@ -175,6 +182,7 @@ p {
 
 .button2:hover {
 	background: #7444b3;
+	border: 3px solid #7444b3;
 	cursor: pointer;
 }
 
@@ -220,6 +228,23 @@ p {
 
 .text-link:hover {
 	color: #4F2684;
+}
+
+.icon-link {
+	transition: 0.3s;
+}
+
+.icon-link:hover {
+	color: #4f2684;
+}
+
+.hotLink h4 {
+	transition: 0.3s;
+}
+
+.hotLink:hover h4{
+	color: #4f2684;
+	cursor: pointer;
 }
 
 .footerHR {

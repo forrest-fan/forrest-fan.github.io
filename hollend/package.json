@@ -36,7 +36,5 @@
   "devDependencies": {
     "gh-pages": "^3.0.0"
   },
-  "homepage": {
-    "http://forrest-fan.github.io/hollend"
-  }
+  "homepage": "http://forrest-fan.github.io/hollend"
 }

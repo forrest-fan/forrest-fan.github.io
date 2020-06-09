@@ -8,7 +8,7 @@
 .img-container {
 	overflow: hidden;
 	box-sizing: border-box;
-	border: 1px solid #888;
+	border: 2px solid #bbb;
 }
 
 .product-img {
@@ -46,7 +46,7 @@
 	font-size: 20px;
 	display: inline-block;
 	float: right;
-	color: #c98300;
+	color: #f2a411;
 	margin: 0.5em 0;
 	cursor: pointer;
 }

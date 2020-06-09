@@ -100,7 +100,7 @@
 }
 
 .active-color {
-	border: 2px solid #c98300;
+	border: 2px solid #f2a411;
 	height: 20px;
 	width: 20px;
 }
@@ -161,8 +161,9 @@
 
 .fav-btn-false {
 	background-color: #fff;
-	color: #c98300;
-	border: 2px solid #c98300;
+	color: #f2a411;
+	font-weight: bold;
+	border: 2px solid #f2a411;
 	border-radius: 5px;
 	padding: 8px 12px;
 	font-size: 15px;
@@ -173,13 +174,14 @@
 
 .fav-btn-false:hover {
 	color: #fff;
-	background-color: #c98300;
+	background-color: #f2a411;
 }
 
 .fav-btn-true {
-	background-color: #c98300;
+	background-color: #f2a411;
 	color: #Fff;
-	border: 2px solid #c98300;
+	font-weight: bold;
+	border: 2px solid #f2a411;
 	border-radius: 5px;
 	padding: 8px 12px;
 	font-size: 15px;

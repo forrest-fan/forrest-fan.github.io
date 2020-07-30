@@ -1,0 +1,116 @@
+<!DOCTYPE html5>
+<html>
+	<head>
+		<title>Crazy Fishing Tackle</title>
+		<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet" />
+		<link href='./styles.css' rel='stylesheet' type='text/css' />
+	</head>
+	<body>
+		<nav class='navbar' id='navbarTop'>
+			<span class='logo' id='logoContainer'>
+				<span id='logoText'>Crazy Fishing Tackle</span>
+			</span>
+			<span class='nav-links-container'>
+				<a class='nav-links active'>HOME</a>
+				<a class='nav-links'>ABOUT</a>
+				<a class='nav-links'>PRODUCTS</a>
+				<a class='nav-links'>LOCATION</a>
+			</span>
+		</nav>
+		<div class='landing'>
+			<div class='landing-img'></div>
+			<div class='landing-content'>
+				<h1>2020 Grand Opening</h1>
+				<h4>September 2020 at Warden and Sheppard</h4>
+				<a class='button'>LEARN MORE</a>
+			</div>
+		</div>
+		<div class='section white' id='home-intro'>
+			<h2>INTRODUCING</h2>
+			<h1>CRAZY FISHING TACKLE</h1>
+			<div class='section-content'>
+				<div class='col third'>
+					<img src='img/home-intro.jpg' width='100%'/>
+				</div>
+				<div class='col two-third'>
+					<p>Crazy Fishing Tackle is Toronto’s newest bait & tackle shop to get you the gear you need. Located at Warden and Sheppard, our professionals find the newest and best tools to help you become a better fisher. Placeholder text placeholder text  Placeholder text placeholder text Placeholder text placeholder text Placeholder text placeholder text Placeholder text placeholder text Placeholder text placeholder text.</p>
+				</div>
+				<div style='text-align: center'>
+					<a class='button'>ABOUT US</a>
+				</div>
+			</div>
+		</div>
+		<div class='section grey' id='home-products'>
+			<h1>OUR PRODUCTS</h1>
+			<div class='section-content'>
+				<div class='col quarter'>
+					<div class='hover-zoom'><img src='img/rods.jpg' width='100%'/></div>
+					<h2>RODS</h2>
+				</div>
+				<div class='col quarter'>
+					<div class='hover-zoom'><img src='img/bait.jpg' width='100%'/></div>
+					<h2>BAIT</h2>
+				</div>
+				<div class='col quarter'>
+					<div class='hover-zoom'><img src='img/hooks.jpg' width='100%'/></div>
+					<h2>HOOKS</h2>
+				</div>
+				<div class='col quarter'>
+					<div class='hover-zoom'><img src='img/accessories.jpg' width='100%'/></div>
+					<h2>ACCESSORIES</h2>
+				</div>
+				<div style='text-align: center'>
+					<a class='button wide'>VIEW ALL PRODUCTS</a>
+				</div>
+			</div>
+		</div>
+		<div class='section blue' id='footer'>
+			<div>
+				<h4>Site Map</h4>
+				<p>Home</p>
+				<p>About</p>
+				<p>Products</p>
+				<p>Location</p>
+			</div>
+			<div>
+				<h4>Hours</h4>
+				<p>Mon-Fri: 9:00am to 7:00pm</p>
+				<p>Sat: 9:30am to 7:00pm</p>
+				<p>Sun: 10:30am to 5:00pm</p>
+			</div>
+			<div>
+				<h4>Address</h4>
+				<p>123 Anywhere Rd.</p>
+				<p>Scarborough, ON</p>
+				<p>M1H 9D2</p>
+			</div>
+			<div id='copyright'>
+				<p>&copy Crazy Fishing Tackle 2020</p>
+			</div>
+		</div>
+	</body>
+	<script>
+		window.onscroll = function resizeNav() {
+			if (window.pageYOffset > 100) {
+				let nav = document.getElementById('navbarTop');
+				let logoContainer = document.getElementById('logoContainer');
+				let logoText = document.getElementById('logoText');
+				nav.style.height = 80;
+				logoContainer.style.backgroundSize = '50px 50px';
+				logoText.style.height = '50px';
+				logoContainer.style.height = '50px';
+				logoContainer.style.paddingLeft = '60px'
+			} else {
+				let nav = document.getElementById('navbarTop');
+				let logoContainer = document.getElementById('logoContainer');
+				let logoText = document.getElementById('logoText');
+				nav.style.height = 120;
+				logoContainer.style.backgroundSize = '80px 80px';
+				logoText.style.height = '80px';
+				logoContainer.style.height = '80px';
+				logoContainer.style.paddingLeft = '90px'
+			}
+		}
+	</script>
+</html>

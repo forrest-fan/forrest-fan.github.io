@@ -14,6 +14,26 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: Barlow Condensed;
 }
 
+h1 {
+	font-size: 60px;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 20px;
+}
+
 p {
 	font-family: Mulish;
 	font-size: 22px;
@@ -62,22 +82,57 @@ p {
 	right: 10px;
 	top: 50%;
 	transform: translateY(-50%);
+	font-size: 22px;
 }
 
 .nav-links {
-	font-size: 22px;
 	padding: 0px 10px;
 	transition: color 0.3s;
 	cursor: pointer;
 }
 
-.nav-links.active {
+.nav-links.active, .side-links.active {
 	color: var(--accent-orange);
 	font-weight: bold;
 }
 
 .nav-links:hover {
 	color: var(--accent-orange-light);
+}
+
+.nav-link-small {
+	padding: 0px 10px;
+	color: var(--accent-orange);
+	display: none;
+}
+
+.sidebar {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	z-index: 2;
+	background: var(--main-blue);
+	color: #fff;
+	box-sizing: border-box;
+	display: none;
+	padding: 40px 20px;
+	width: 200px;
+	box-shadow: 2px 2px 4px 1px #333;
+	transition: margin-left 0.3s;
+}
+
+.sidebar .exit-btn {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	font-size: 14px;
+}
+
+.side-links {
+	display: block;
+	font: 22px Barlow Condensed;
+	padding: 10px;
 }
 
 .landing {
@@ -100,6 +155,7 @@ p {
 
 .landing-content {
 	position: absolute;
+	width: 80%;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -107,12 +163,7 @@ p {
 	color: #fff;
 }
 
-.landing-content h1 {
-	font-size: 60px;
-}
-
-.landing-content h4 {
-	font-size: 30px;
+.landing-content h3 {
 	font-weight: normal;
 }
 
@@ -158,32 +209,23 @@ p {
 	color: #fff;
 }
 
-.section h1, h2 {
+.section h2, .section h3 {
 	color: var(--main-blue);
 	text-align: center;
 	font-weight: bold;
-}
-
-.section h1 {
-	font-size: 32px;
-}
-
-.section h2 {
-	font-size: 24px;
 }
 
 .section-content {
 	padding: 20px 0px;
 }
 
-#home-products h2 {
-	font-size: 28px;
+#home-products h3 {
 	margin: 0.7em 0;
 	text-decoration: none;
 	cursor: pointer;
 }
 
-#home-products h2:hover {
+#home-products .quarter:hover h3 {
 	text-decoration: underline;
 }
 
@@ -197,7 +239,7 @@ p {
 	cursor: pointer;
 }
 
-.hover-zoom img:hover {
+#home-products .quarter:hover .hover-zoom img {
 	transform: scale(1.1);
 }
 
@@ -208,7 +250,6 @@ p {
 }
 
 #footer h4 {
-	font-size: 24px;
 	font-weight: normal;
 }
 
@@ -240,4 +281,97 @@ p {
 
 .col.quarter {
 	width: 24.5%;
+}
+
+@media (max-width: 1200px) {
+	.col.third {
+		display: block;
+		width: 500px;
+		margin: 0 auto;
+	}
+
+	.col.two-third {
+		display: block;
+		width: 100%;
+	}
+
+	.col.quarter {
+		width: 49.5%;
+	}
+}
+
+@media (max-width: 900px) {
+	.section {
+		padding: 50px 100px;
+	}
+
+	.col.third {
+		display: block;
+		width: 400px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 700px) {
+	.nav-links {
+		display: none;
+	}
+
+	.nav-link-small {
+		display: inline-block;
+	}
+
+	.sidebar {
+		display: block;
+	}
+	
+	.section {
+		padding: 50px 50px;
+	}
+
+	.col.third {
+		display: block;
+		width: 300px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 550px) {
+	h1 {
+		font-size: 40px;
+	}
+
+	h2 {
+		font-size: 35px;
+	}
+
+	h3 {
+		font-size: 25px;
+	}
+
+	h4 {
+		font-size: 20px;
+	}
+
+	p {
+		font-size: 20px;
+	}
+
+	.col.third {
+		display: block;
+		width: 100%;
+	}
+
+	.col.quarter {
+		display: block;
+		width: 100%;
+	}
+
+	#footer {
+		display: block;
+	}
+
+	#footer div {
+		margin: 10px 0;
+	}
 }

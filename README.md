@@ -2,6 +2,11 @@
 
 A collection of all the website projects I've worked on. They are all done with HTML, CSS, JS, and/or PHP.
 
+### Western Sports Business Club
+> December 2019
+
+Western Sports Business Club's new website. View it [here](http://westernsportsbusinessclub.com/).
+
 ### Sonata Music
 > August 2019
 

@@ -32,7 +32,7 @@
 			<div class='landing-content'>
 				<h1>2020 Grand Opening</h1>
 				<h3>September 2020 at Warden and Sheppard</h3>
-				<a class='button'>LEARN MORE</a>
+				<a class='button wide' href="#home-intro">LEARN MORE</a>
 			</div>
 		</div>
 		<div class='section white' id='home-intro'>
@@ -40,37 +40,37 @@
 			<h2>CRAZY FISHING TACKLE</h2>
 			<div class='section-content'>
 				<div class='col third'>
-					<img src='img/home-intro.jpg' width='100%'/>
+					<img src='img/store1.jpg' width='100%'/>
 				</div>
 				<div class='col two-third'>
-					<p>Crazy Fishing Tackle is Toronto’s newest bait & tackle shop to get you the gear you need. Located at Warden and Sheppard, our professionals find the newest and best tools to help you become a better fisher. Placeholder text placeholder text  Placeholder text placeholder text Placeholder text placeholder text.</p>
-				</div>
-				<div style='text-align: center'>
-					<a class='button'>ABOUT US</a>
-				</div>
+					<p>Crazy Fishing Tackle is Toronto’s newest bait & tackle shop to get you the gear you need. Located in north Scarborough at Warden and Sheppard, our professionals find the newest and best tools to help improve your fishing experience. We sell various equipments such as fishing rods, hooks, baits, and other must-have accessories.</p>
+					<div class="para-cta">
+						<a class='button wide' href='about.html'>ABOUT US</a>
+					</div>
+				</div>				
 			</div>
 		</div>
 		<div class='section grey' id='home-products'>
 			<h2>OUR PRODUCTS</h2>
 			<div class='section-content'>
 				<div class='col quarter'>
-					<div class='hover-zoom'><img src='img/rods.jpg' width='100%'/></div>
+					<img src='img/rods.jpg' width='100%'/>
 					<h3>RODS</h3>
 				</div>
 				<div class='col quarter'>
-					<div class='hover-zoom'><img src='img/bait.jpg' width='100%'/></div>
+					<img src='img/bait.jpg' width='100%'/>
 					<h3>BAIT</h3>
 				</div>
 				<div class='col quarter'>
-					<div class='hover-zoom'><img src='img/hooks.jpg' width='100%'/></div>
+					<img src='img/hooks.jpg' width='100%'/>
 					<h3>HOOKS</h3>
 				</div>
 				<div class='col quarter'>
-					<div class='hover-zoom'><img src='img/accessories.jpg' width='100%'/></div>
+					<img src='img/accessories.jpg' width='100%'/>
 					<h3>ACCESSORIES</h3>
 				</div>
 				<div style='text-align: center'>
-					<a class='button wide'>VIEW ALL PRODUCTS</a>
+					<a class='button wide' href="products.html">VIEW ALL PRODUCTS</a>
 				</div>
 			</div>
 		</div>
@@ -83,14 +83,14 @@
 			</div>
 			<div>
 				<h4>Address</h4>
-				<p>123 Anywhere Rd.</p>
+				<p>2190 Warden Avenue</p>
 				<p>Scarborough, ON</p>
-				<p>M1H 9D2</p>
+				<p>M1T 1V6</p>
 			</div>
 			<div>
 				<h4>Contact</h4>
-				<p>647-123-4567</p>
-				<p>crazyfishingtackle@gmail.com</p>
+				<p>647-707-5413</p>
+				<p>mycrazyfishingtackle@gmail.com</p>
 			</div>
 			<div id='copyright'>
 				<p>&copy Crazy Fishing Tackle 2020</p>
@@ -98,4 +98,31 @@
 		</div>
 	</body>
 	<script src='script.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      // Prevent default anchor click behavior
+	      event.preventDefault();
+
+	      // Store hash
+	      var hash = this.hash;
+
+	      // Using jQuery's animate() method to add smooth page scroll
+	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function(){
+
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    } // End if
+	  });
+	});
+	</script>
 </html>

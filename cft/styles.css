@@ -34,10 +34,14 @@ h5 {
 	font-size: 20px;
 }
 
-p {
+p, li {
 	font-family: Mulish;
 	font-size: 22px;
 	line-height: 1.6;
+}
+
+ul {
+	margin-left: 35px;
 }
 
 .navbar {
@@ -148,6 +152,7 @@ nav a {
 .landing-img.home {
 	background: url('./img/landing.jpg') center no-repeat;
 	background-size: cover;
+	filter: grayscale(0.5) brightness(0.6);
 }
 
 .landing-img.about {
@@ -182,6 +187,7 @@ nav a {
 	cursor: pointer;
 	box-shadow: 1px 1px 4px 1px #333;
 	transition: box-shadow 0.3s;
+	text-decoration: none;
 }
 
 .button.wide {
@@ -226,28 +232,28 @@ nav a {
 	padding: 20px 0px;
 }
 
+.para-cta {
+	text-align: center;
+	padding: 10px 0px;
+}
+
+.text-link {
+	color: inherit;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.text-link:hover {
+	color: var(--main-blue);
+}
+
+#home-intro {
+	padding-top: 125px;
+}
+
 #home-products h3 {
 	margin: 0.7em 0;
 	text-decoration: none;
-	cursor: pointer;
-}
-
-#home-products .quarter:hover h3 {
-	text-decoration: underline;
-}
-
-.hover-zoom {
-	width: 100%;
-	overflow: hidden;
-}
-
-.hover-zoom img {
-	transition: transform 0.6s;
-	cursor: pointer;
-}
-
-#home-products .quarter:hover .hover-zoom img {
-	transform: scale(1.1);
 }
 
 #hours-location div div {
@@ -256,6 +262,13 @@ nav a {
 
 #hours-location p {
 	font-size: 19px;
+}
+
+#hours-location a {
+	font-family: Barlow Condensed;
+	font-size: 22px;
+	font-weight: bold;
+	color: var(--main-blue);
 }
 
 #footer {

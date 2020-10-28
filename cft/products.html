@@ -1,0 +1,154 @@
+<!DOCTYPE html5>
+<html>
+	<head>
+		<title>Products | Crazy Fishing Tackle</title>
+		<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet" />
+		<link href='./styles.css' rel='stylesheet' type='text/css' />
+		<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css' rel='stylesheet' />
+		<link href='img/favicon.png' rel='icon' type='image/png' />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<nav class='navbar' id='navbarTop'>
+			<a href='index.html'><img src='img/logo-white.png' class='logo-img' id='logo-img'/></a>
+			<span class='nav-links-container'>
+				<a class='nav-links' href='index.html'>HOME</a>
+				<a class='nav-links' href='#'>ABOUT</a>
+				<a class='nav-links active' href='products.html'>PRODUCTS</a>
+				<a class='nav-links' href='location.html'>LOCATION</a>
+				<a class='nav-link-small' onClick='openSidebar()'><i class='fas fa-bars'></i></a>
+			</span>
+		</nav>
+		<div class='sidebar' id='navbarSide' style='margin-left: -210px'>
+			<div class='exit-btn' onClick='closeSidebar()'><i class='fas fa-times'></i></div>
+			<a class='side-links active' href='index.html'>HOME</a>
+			<a class='side-links' href='#'>ABOUT</a>
+			<a class='side-links' href='products.html'>PRODUCTS</a>
+			<a class='side-links' href='location.html'>LOCATION</a>
+		</div>
+		<div class='section white top' id='products-intro'>
+			<h2>PRODUCTS</h2>
+			<div class='section-content' style="text-align: center">
+				<p>Crazy Fishing Tackle provides the best fishing equipment consisting of rods, bait, hooks, and other accessories such as nets and kits that are crucial to your fishing trip.</p>
+			</div>
+		</div>
+		<div class='section grey' id='products-rods'>
+			<h2>FISHING RODS</h2>
+			<div class='section-content'>
+				<div class='col half'>
+					<!--IMAGE-->
+				</div>
+				<div class='col half'>
+					<p>We offer fishing rods for all types of fishers, including beginners and enthusiasts, as well as specialized rods for expert fishers. We carry brands such as:</p>
+					<ul>
+						<li>Yes</li>
+						<li>Brand 2</li>
+						<li>Brand 3</li>
+					</ul>
+					<p>We welcome you to visit us and find a rod that suits you.</p>
+				</div>
+			</div>
+		</div>
+		<div class='section grey' id='products-bait'>
+			<h2>FISHING BAIT</h2>
+			<div class='section-content'>
+				<div class='col half'>
+					<!--IMAGE-->
+				</div>
+				<div class='col half'>
+					<p>We have over <span style="color: red">100</span> variations of fishing bait that are used to catch numerous types of fish. Some types of bait we offer include:</p>
+					<ul>
+						<li>Yes</li>
+						<li>Brand 2</li>
+						<li>Brand 3</li>
+					</ul>
+					<p>Please feel free to come and learn about which bait suits you and the type of fish you'd like to catch.</p>
+				</div>
+			</div>
+		</div>
+		<div class='section grey' id='products-hooks'>
+			<h2>FISHING HOOKS</h2>
+			<div class='section-content'>
+				<div class='col half'>
+					<!--IMAGE-->
+				</div>
+				<div class='col half'>
+					<p>We have hooks for various fish types and sizes, including:</p>
+					<ul>
+						<li>Yes</li>
+						<li>Brand 2</li>
+						<li>Brand 3</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class='section grey' id='products-other'>
+			<h2>OTHER ITEMS</h2>
+			<div class='section-content'>
+				<div class='col half'>
+					<!--IMAGE-->
+				</div>
+				<div class='col half'>
+					<p>We offer many other different items that are important for every fisher, such as: </p>
+					<ul>
+						<li>Nets</li>
+						<li>Bait kits</li>
+						<li>Brand 3</li>
+					</ul>
+					<p>Visit Crazy Fishing Tackle for all your fising needs.</p>
+				</div>
+			</div>
+		</div>
+		<div class='section blue' id='footer'>
+			<div>
+				<h4>Hours</h4>
+				<p>Mon-Fri: 9:00am to 7:00pm</p>
+				<p>Sat: 9:30am to 7:00pm</p>
+				<p>Sun: 10:30am to 5:00pm</p>
+			</div>
+			<div>
+				<h4>Address</h4>
+				<p>2190 Warden Avenue</p>
+				<p>Scarborough, ON</p>
+				<p>M1T 1V6</p>
+			</div>
+			<div>
+				<h4>Contact</h4>
+				<p>647-707-5413</p>
+				<p>mycrazyfishingtackle@gmail.com</p>
+			</div>
+			<div id='copyright'>
+				<p>&copy Crazy Fishing Tackle 2020</p>
+			</div>
+		</div>
+	</body>
+	<script src='script.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      // Prevent default anchor click behavior
+	      event.preventDefault();
+
+	      // Store hash
+	      var hash = this.hash;
+
+	      // Using jQuery's animate() method to add smooth page scroll
+	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function(){
+
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    } // End if
+	  });
+	});
+	</script>
+</html>

@@ -1,0 +1,18 @@
+#math {
+    padding: 20px;
+    max-width: 100%;
+}
+
+#math #grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-column-gap: 10px;
+}
+
+#math #grid input {
+    justify-self: center;
+    width: 80px;
+    padding: 6px 4px;
+    margin: 5px 0px;
+    font-size: 17px;
+}

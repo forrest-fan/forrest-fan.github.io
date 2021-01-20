@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spirit of Math Drills Calculator</title>
+        <link rel='stylesheet' href='styles.css' />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <h1>Spirit of Math Drills Calculator</h1>
+        <form id='math'>
+            <select id='operator'>
+                <option value='+'>Addition</option>
+                <option value='-'>Subtraction</option>
+                <option value='*'>Multiplication</option>
+                <option value='/'>Division</option>
+            </select>
+            <div id='grid'>
+                <!-- TOP ROW -->
+                <div></div>
+                <input class='top-row' placeholder='Row #s'/>
+                <input class='top-row' placeholder='Row #s'/>
+                <input class='top-row' placeholder='Row #s'/>
+                <input class='top-row' placeholder='Row #s'/>
+                <input class='top-row' placeholder='Row #s'/>
+                <input class='top-row' placeholder='Row #s'/>
+                <input class='top-row' placeholder='Row #s'/>
+                <input class='top-row' placeholder='Row #s'/>
+                <input class='top-row' placeholder='Row #s'/>
+
+                <!-- ROW 1 -->
+                <input class='column-1' placeholder='Column #s'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+
+                <!-- ROW 2 -->
+                <input class='column-1' placeholder='Column #s'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+
+                <!-- ROW 3 -->
+                <input class='column-1' placeholder='Column #s'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+
+                <!-- ROW 4 -->
+                <input class='column-1' placeholder='Column #s'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+
+                <!-- ROW 5 -->
+                <input class='column-1' placeholder='Column #s'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+
+                <!-- ROW 6 -->
+                <input class='column-1' placeholder='Column #s'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+
+                <!-- ROW 7 -->
+                <input class='column-1' placeholder='Column #s'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+
+                <!-- ROW 8 -->
+                <input class='column-1' placeholder='Column #s'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+                <input class='answer' placeholder='Answer'/>
+            </div>
+            <input type='submit' value='Calculate' id='calc'/>
+        </form>
+        <div id='answers'>
+
+        </div>
+        <script>
+            document.getElementById('math').addEventListener('submit', function(e) {
+                e.preventDefault();
+                var smalls = document.getElementsByClassName('top-row');
+                var bigs = document.getElementsByClassName('column-1');
+                var answers = document.getElementsByClassName('answer');
+                var counter = 0;
+                var correctAnswers = [];
+                const operator = document.getElementById('operator').value;
+                for (let i = 0; i < smalls.length; i++) {
+                    let = rowAnswers = [];
+                    for (let j = 0; j < bigs.length; j++) {
+                        var thisAns = answers[counter].value;
+                        var correct; 
+                        if (operator == '+') {
+                            correct = parseInt(bigs[j].value) + parseInt(smalls[i].value);
+                        } else if (operator == '-') {
+                            correct = parseInt(bigs[j].value) - parseInt(smalls[i].value);
+                        } else if (operator == '*') {
+                            correct = parseInt(bigs[j].value) * parseInt(smalls[i].value);
+                        } else {
+                            if (parseInt(bigs[j].value) % parseInt(smalls[i].value) != 0) {
+                                correct = Math.floor(parseInt(bigs[j].value) / parseInt(smalls[i].value)) + 'R' + (parseInt(bigs[j].value) % parseInt(smalls[i].value));
+                            } else {
+                                correct = Math.floor(parseInt(bigs[j].value) / parseInt(smalls[i].value));
+                            }
+                        }
+                        
+                        // Show correct answers
+                        if (thisAns == correct && thisAns != '') {
+                            answers[counter].style.backgroundColor = '#328724';
+                            answers[counter].style.color = '#ffffff';
+                        } else {
+                            answers[counter].style.backgroundColor = '#872424';
+                            answers[counter].style.color = '#ffffff';
+                        }
+
+                        // Insert correct answers into 2d array
+                        rowAnswers.push(correct);
+
+                        counter++;
+                    }
+                    correctAnswers.push(rowAnswers);
+                }
+                console.log(correctAnswers)
+                var table = '<table>'
+                for (let i = 0; i < smalls.length; i++) {
+                    table += '<tr>';
+                    for (let j = 0; j < bigs.length; j++) {
+                        table += '<td>' + correctAnswers[i][j] + '</td>';
+                    }
+                    table += '</tr>';
+                }
+                table += '</table>'
+                console.log(table);
+                document.getElementById('answers').innerHTML = table;
+            });
+        </script>
+    </body>
+</html>

@@ -1,85 +1,139 @@
 <!DOCTYPE html>
 <html>
-<title>Western Sports Business Club</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="img/logo.png">
-<link rel="stylesheet" href="css/w3.css">
-<link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
+<head>
+  <title>Western Sport Business Club</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
 
-body, html {
-  height: 100%;
-  line-height: 1.8;
-}
+  body, html {
+    height: 100%;
+    line-height: 1.8;
+  }
 
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("img/home/home.jpg");
-  min-height: 90%;
-}
+  /* Full height image header */
+  #bgimg {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
-.w3-bar .w3-button {
-  padding: 16px;
-}
-</style>
+  #home {
+    min-height: 70%;
+    background: #000;
+  }
+
+  .w3-bar .w3-button {
+    padding: 16px;
+  }
+  </style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100871856-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-100871856-2');
+  </script>
+</head>
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-card-4" id="myNavbar">
-    <a href="index.html" id="logo" class="w3-bar-item nav-item"><img src="img/logo-white.png" height="50px" id="logoImg">WSBC</a>
+    <a href="#" id="logo" class="w3-bar-item nav-item"><img src="img/logo-white.png" height="50px" id="logoImg">WSBC</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small w3-hide-medium nav-contain" onclick="w3_close()">
+      <a href='#' class='w3-bar-item nav-item active-nav'>HOME</a>
       <a href="about.html" class="w3-bar-item nav-item">ABOUT</a>
-      <a href="team.html" class="w3-bar-item nav-item">TEAM</a>
-      <a href="newsletter.html" class="w3-bar-item nav-item">NEWSLETTER</a>
-      <a href="conference.html" class="w3-bar-item nav-item">CONFERENCE</a>
       <a href="events.html" class="w3-bar-item nav-item">EVENTS</a>
-      <a href="contact.html" class="w3-bar-item nav-item">CONTACT</a>
+      <a href="publications.html" class="w3-bar-item nav-item">PUBLICATIONS</a>
+      <a href="conference.html" class="w3-bar-item nav-item">CONFERENCE</a>
+      <a class="w3-bar-item nav-item SM active-nav" href="https://www.facebook.com/WesternSportBusinessClub/"><i class="fa fa-facebook-f"></i></a>
+      <a class="w3-bar-item nav-item SM active-nav" href="https://www.instagram.com/westernsportbusinessclub/"><i class="fa fa-instagram"></i></a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    <a href="javascript:void(0)" class="w3-bar-item nav-item w3-right w3-hide-large" onclick="w3_open()">
+    <a href="javascript:void(0)" class="bars w3-bar-item nav-item w3-right w3-hide-large" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-medium w3-hide-large" style="width: 0px; padding-top: 32px" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-card-4 w3-animate-left w3-hide-large" style="width: 0px; padding-top: 32px" id="mySidebar">
+  <div class='sidebar-x' onclick="w3_close()"><i class='fa fa-times'></i></div>
+  <a href="#" onclick="w3_close()" class="w3-bar-item sidebar-item">HOME</a>
   <a href="about.html" onclick="w3_close()" class="w3-bar-item sidebar-item">ABOUT</a>
-  <a href="team.html" onclick="w3_close()" class="w3-bar-item sidebar-item">TEAM</a>
-  <a href="newsletter.html" onclick="w3_close()" class="w3-bar-item sidebar-item">NEWSLETTER</a>
-  <a href="conference.html" onclick="w3_close()" class="w3-bar-item sidebar-item">CONFERENCE</a>
   <a href="events.html" onclick="w3_close()" class="w3-bar-item sidebar-item">EVENTS</a>
-  <a href="contact.html" onclick="w3_close()" class="w3-bar-item sidebar-item">CONTACT</a>
+  <a href="publications.html" onclick="w3_close()" class="w3-bar-item sidebar-item">PUBLICATIONS</a>
+  <a href="conference.html" onclick="w3_close()" class="w3-bar-item sidebar-item">CONFERENCE</a>
+  <hr class="sidebarHR"/>
+  <span>
+    <a class="sidebar-item SM" href="https://www.facebook.com/WesternSportBusinessClub/"><i class="fa fa-facebook-f"></i></a>
+    <a class="sidebar-item SM" href="https://www.instagram.com/westernsportbusinessclub/"><i class="fa fa-instagram"></i></a>
+  </span>
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container" id="home" onclick="w3_close()">
-  <div class="w3-display-middle w3-text-white w3-center">
+<header class="w3-display-container" id="home" onclick="w3_close()">
+  <div class='bgimg-2' id='bgimg'></div>
+  <!-- <div class="w3-display-middle w3-text-white w3-center slides">
     <div style="padding:22px 0px">
-      <span class="w3-hide-small headTextBig">Western Sports Business Club</span><br>
-      <span class="w3-hide-large w3-hide-medium headTextSmall">Western Sports Business Club</span><br>
+      <span class="w3-hide-small headTextBig">Live with Leo - October 19</span><br>
+      <span class="w3-hide-large w3-hide-medium headTextSmall">Live with Leo - October 19</span><br>
     </div>
-    <a href="#about" class="button">LEARN MORE</a>
+    <a href="events.html" class="button">LEARN MORE</a>
+  </div> -->
+  <!-- FOR SLIDESHOW:
+    - Uncomment other slide
+    - Uncomment dots
+    - Uncomment animation in #bgimg in styles.css
+    - Uncomment showSlides() function call
+  -->
+  <div class="w3-display-middle w3-text-white w3-center slides">
+    <div style="padding:22px 0px">
+      <span class="w3-hide-small headTextBig">Western Sport Business Club</span><br>
+      <span class="w3-hide-large w3-hide-medium headTextSmall">Western Sport Business Club</span><br>
+    </div>
+    <a href="about.html" class="button">ABOUT US</a>
   </div>
+  <!-- <span class='slideshow-dots'>
+    <i class='fa fa-circle dots'></i>
+    <i class='fa fa-circle dots'></i>
+  </span> -->
 </header>
-
+<div class="container" style="padding:32px 16px"  onclick="w3_close()">
+  <h3 class="w3-center">INTERESTED IN JOINING?</h3>
+  <div class="w3-row-padding w3-center">
+    <p class="w3-center">All WSBC members receive access to most of our Zoom events free of charge and are the first to know about upcoming events. Join WSBC for engaging events with leaders in the sport business industry and connections to students with various experiences in the field. Visit the USC Store and pay your $5 club fee and you're in!</p>
+    <div class='w3-padding-16'>
+      <a href="https://www.westernusc.store/product/western-sport-business-club/" target="_blank" class="button2">JOIN TODAY</a>
+    </div>
+  </div>
+</div>
+<hr class='container'>
 <!-- About Section -->
-<div class="container" style="padding:85px 16px" id="about" onclick="w3_close()">
+<div class="container" style="padding:32px 16px" id="about" onclick="w3_close()">
   <h3 class="w3-center">WESTERN'S GO-TO CLUB FOR ALL THINGS SPORTS</h3>
   <div class="w3-row-padding w3-center">
     <p class="w3-center">From the latest signings to pressing issues in the world of sports, WSBC covers it all. Through hands-on experiences and events and our annual conference, WSBC provides an unforgettable experience for all sports fans.</p>
-    <a href="about.html" class="button2">LEARN MORE</a>
+    <div class='w3-padding-16'>
+      <a href="about.html" class="button2">ABOUT US</a>
+    </div>
     <img src="img/home/home-2.jpg" class="w3-round-xxlarge" style="margin-top:32px" width="100%"/>
   </div>
 </div>
@@ -93,7 +147,7 @@ body, html {
     </div>
   </div>
   <hr class="footerHR">
-  <p>&copy Western Sports Business Club 2019</p>
+  <p>&copy Western Sport Business Club 2021</p>
 </footer>
  
 <script>
@@ -111,6 +165,24 @@ function w3_open() {
 // Close the sidebar with the close button
 function w3_close() {
     mySidebar.style.width = "0px";
+}
+
+var slideIndex = -1;
+var slideCount = 2;
+// showSlides();
+
+function showSlides() {
+  var slides = document.getElementsByClassName("slides");
+  var dots = document.getElementsByClassName("dots");
+  for(var i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+    dots[i].className = "fa fa-circle dots"
+  }
+  slideIndex = (slideIndex + 1) % slideCount;
+  slides[slideIndex].style.display = 'block';
+  dots[slideIndex].className += ' active';
+  document.getElementById("bgimg").className = document.getElementById("bgimg").className.replace(/bgimg-./, "bgimg-" + (slideIndex + 1));
+  setTimeout(showSlides, 6000);
 }
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
-<title>About | Western Sports Business Club</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="img/logo.png">
-<link rel="stylesheet" href="css/w3.css">
-<link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
+<head>
+  <title>About | Western Sport Business Club</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+    }
 
-body, html {
-  height: 100%;
-  line-height: 1.8;
-}
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+  </style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100871856-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-.w3-bar .w3-button {
-  padding: 16px;
-}
-</style>
+    gtag('config', 'UA-100871856-2');
+  </script>
+</head>
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -30,29 +40,35 @@ body, html {
     <a href="index.html" id="logo" class="w3-bar-item nav-item"><img src="img/logo-white.png" height="50px" id="logoImg">WSBC</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small w3-hide-medium nav-contain" onclick="w3_close()">
-      <a href="about.html" class="w3-bar-item nav-item">ABOUT</a>
-      <a href="team.html" class="w3-bar-item nav-item">TEAM</a>
-      <a href="newsletter.html" class="w3-bar-item nav-item">NEWSLETTER</a>
-      <a href="conference.html" class="w3-bar-item nav-item">CONFERENCE</a>
+      <a href='index.html' class='w3-bar-item nav-item'>HOME</a>
+      <a href="#" class="w3-bar-item nav-item active-nav">ABOUT</a>
       <a href="events.html" class="w3-bar-item nav-item">EVENTS</a>
-      <a href="contact.html" class="w3-bar-item nav-item">CONTACT</a>
+      <a href="publications.html" class="w3-bar-item nav-item">PUBLICATIONS</a>
+      <a href="conference.html" class="w3-bar-item nav-item">CONFERENCE</a>
+      <a class="w3-bar-item nav-item SM active-nav" href="https://www.facebook.com/WesternSportBusinessClub/"><i class="fa fa-facebook-f"></i></a>
+      <a class="w3-bar-item nav-item SM active-nav" href="https://www.instagram.com/westernsportbusinessclub/"><i class="fa fa-instagram"></i></a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    <a href="javascript:void(0)" class="w3-bar-item nav-item w3-right w3-hide-large" onclick="w3_open()">
+    <a href="javascript:void(0)" class="bars w3-bar-item nav-item w3-right w3-hide-large" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-medium w3-hide-large" style="width: 0px; padding-top: 32px" id="mySidebar">
-  <a href="about.html" onclick="w3_close()" class="w3-bar-item sidebar-item">ABOUT</a>
-  <a href="team.html" onclick="w3_close()" class="w3-bar-item sidebar-item">TEAM</a>
-  <a href="newsletter.html" onclick="w3_close()" class="w3-bar-item sidebar-item">NEWSLETTER</a>
-  <a href="conference.html" onclick="w3_close()" class="w3-bar-item sidebar-item">CONFERENCE</a>
+<nav class="w3-sidebar w3-bar-block w3-card-4 w3-animate-left w3-hide-large" style="width: 0px; padding-top: 32px" id="mySidebar">
+  <div class='sidebar-x' onclick="w3_close()"><i class='fa fa-times'></i></div>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item sidebar-item">HOME</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item sidebar-item">ABOUT</a>
   <a href="events.html" onclick="w3_close()" class="w3-bar-item sidebar-item">EVENTS</a>
-  <a href="contact.html" onclick="w3_close()" class="w3-bar-item sidebar-item">CONTACT</a>
+  <a href="publications.html" onclick="w3_close()" class="w3-bar-item sidebar-item">PUBLICATIONS</a>
+  <a href="conference.html" onclick="w3_close()" class="w3-bar-item sidebar-item">CONFERENCE</a>
+  <hr class="sidebarHR"/>
+  <span>
+    <a class="sidebar-item SM" href="https://www.facebook.com/WesternSportBusinessClub/"><i class="fa fa-facebook-f"></i></a>
+    <a class="sidebar-item SM" href="https://www.instagram.com/westernsportbusinessclub/"><i class="fa fa-instagram"></i></a>
+  </span>
 </nav>
 
 
@@ -68,15 +84,15 @@ body, html {
       <img src="img/about/conference.jpg" style="border-radius:20px" width="100%"/>
       <h3 class="w3-display-middle w3-center sqlink">CONFERENCE</h3>
     </a>
-    <a href="newsletter.html" class="w3-col l4 m4 s12 w3-display-container sqContainer">
+    <a href="publications.html" class="w3-col l4 m4 s12 w3-display-container sqContainer">
       <img src="img/about/newsletter.jpg" style="border-radius:20px" width="100%"/>
       <h3 class="w3-display-middle w3-center sqlink">NEWSLETTER</h3>
     </a>
   </div>
   <h2>How Do I Join?</h2>
-  <p>Easy. Just visit our booth at the USC Clubs Fair to fill out the form and pay club fees and you're in!</p>
+  <p>Easy. Just visit USC store pay your $5 club fees and you're in! As a member, you'll be the first to know about our events and will have access to most events free of charge.</p>
   <div class="w3-center w3-padding-16">
-    <a class="button2" href="https://www.westernusc.store/product/western-sport-business-club/">JOIN NOW</a>
+    <a class="button2" href="https://www.westernusc.store/product/western-sport-business-club/">JOIN HERE</a>
   </div>
 </div>
 
@@ -89,7 +105,7 @@ body, html {
     </div>
   </div>
   <hr class="footerHR">
-  <p>&copy Western Sports Business Club 2019</p>
+  <p>&copy Western Sport Business Club 2021</p>
 </footer>
  
 <script>

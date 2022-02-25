@@ -23,20 +23,42 @@ h4 {
 	line-height: 1.3;
 }
 
-p {
+h6 {
+	font-family: Open Sans;
+	font-size: 20px;
+	letter-spacing: 1.2;
+}
+
+p, li {
 	font-family: Merriweather;
 	font-size: 17px;
 }
 
+hr {
+	border-top: 1px solid #999;
+}
+
+.w3-top {
+	z-index: 3!important;
+}
+
 #myNavbar {
 	background: #4F2684;
-	color: #FFFFFF;
+	color: #CBBDDE;
 	padding: 0px 20px;
+}
+
+#myNavbar .bars {
+	color: #fff!important;
+}
+
+#logo {
+	color: #fff;
 }
 
 #logoImg {
 	padding: 8px 8px;
-	margin-right: 8px
+	margin-right: 8px;
 }
 
 .nav-item {
@@ -48,7 +70,11 @@ p {
 	letter-spacing: 1.5px;
 }
 
-.nav-item:not(#logo){
+.nav-item.SM {
+	padding: 20px 7px;
+}
+
+.nav-item:not(#logo):not(.SM){
 	padding: 20px 15px!important;
 }
 
@@ -66,12 +92,35 @@ p {
 	transition: 0.4s;
 }
 
+#mySidebar span {
+	margin-left: 32px;
+}
+
+.sidebar-x {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	font-size: 15px;
+}
+
 .sidebar-item {
 	font-family: Montserrat;
 	font-size: 20px;
 	font-weight: bold;
 	text-decoration: none;
 	padding: 8px 40px!important;
+}
+
+.sidebarHR {
+	margin: 10px 50px 10px 40px;
+	border-bottom: 2px solid #4F2684;
+}
+
+.sidebar-item.SM {
+	display: inline-block;
+	font-size: 17px;
+	padding: 8px!important;
 }
 
 .headTextBig {
@@ -109,42 +158,169 @@ p {
 	color: #4F2684;
 }
 
+.small-img {
+	width: 50%;
+}
+
+.small-img.sq {
+	width: 30%;
+}
+
+.active-nav {
+	color: #fff;
+}
+
+.back-link {
+	background: #b5b1ba;
+	left: 0;
+	top: 65px;
+	position: fixed;
+	padding: 7px 12px;
+	border-radius: 0 0 10px 0;
+	text-decoration: none;
+	z-index: 2;
+}
+
+.back-link i {
+	font-size: 10px;
+}
+
+.back-link:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.bgimg-1{
+	background-image: url("../img/home/rautins-home.png");
+}
+.bgimg-2{
+	background-image: url("../img/home/home.jpg");
+}
+#bgimg, .slides {
+	/*animation: fade-in-out 6s infinite;*/
+}
+
+@keyframes fade-in-out {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.slideshow-dots {
+	z-index: 2;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.slideshow-dots i {
+	color: #fff;
+	opacity: 0.6;
+	font-size: 8px;
+	padding: 0px 2px;
+	transition: 0.3s;
+}
+
+.slideshow-dots i:hover, .slideshow-dots i.active {
+	opacity: 1;
+}
+
+.newsletterLink p, h3 {
+	margin: 0;
+}
+
 @media (min-width: 993px) {
 	.container {
 		margin: 0 10%;
 	}
-	#newsEmail {
-		width: 60%;
+	.newsHeadImg {
+		width: 70%;
 	}
+
 }
 @media (max-width: 992px) {
 	.container {
 		margin: 0 5%;
 	}
-	#newsEmail {
+	.newsHeadImg {
 		width: 100%;
+	}
+	.small-img {
+		width: 80%;
+	}
+}
+
+@media (max-width: 500px) {
+	.pastEditions-filter button {
+		display: block;
+	}
+	h1, h2 {
+		line-height: 1.3;
+		font-size: 22px;
+	}
+	p, li {
+		font-size: 15px;
 	}
 }
 
 .collapse {
 	overflow:auto;
 }
-
 .newsletterLink {
 	text-decoration: none;
+	cursor: pointer;
+}
+
+.newsletterLink.mainLink {
+	position: relative;
+}
+
+.newsletterLink.mainLink .newsletterHead {
+	position: absolute;
+	bottom: 25px;
+	left: 35px;
+	color: #fff;
+}
+
+.newsletterHead h2, p {
+	margin: 0;
 }
 
 .newsletterLink img {
-	filter: grayscale(20%);
+	filter: grayscale(30%);
 	transition: 0.3s;
 }
 
-.newsletterLink:hover {
-	cursor: pointer;
+.newsletterLink.mainLink img {
+	filter: brightness(60%) grayscale(0%);
+}
+
+.newsletterLink.mainLink h4 {
+	font-size: 16px;
+	font-weight: bold;
 }
 
 .newsletterLink:hover h2{
 	color: #4F2684;
+}
+
+.newsletterLink.mainLink:hover h2 {
+	color: #fff;
+}
+
+.newsletterLink h3 {
+	line-height: 1.3;
+	margin-top: 10px;
 }
 
 .newsletterLink:hover h3{
@@ -155,15 +331,45 @@ p {
 	filter: none;
 }
 
-#newsEmail {
-	padding: 5px 12px;
+.newsletterLink.mainLink:hover img {
+	filter: brightness(70%) grayscale(0%);
+}
+
+.pasteditions-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.pastEditions-filter {
 	font-family: Merriweather;
+}
+
+.pastEditions-filter span {
+	margin-right: 10px;
+}
+
+.pastEditions-filter button {
+	font-family: Open Sans;
+	font-weight: bold;
+	padding: 5px 10px;
+	margin: 0px 5px;
+	outline: none;
+	background: none;
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
 	transition: 0.3s;
 }
 
-#newsEmail:focus {
-	outline: none;
-	border: 1px solid #4F2684;
+.pastEditions-filter button.active {
+	background: #4F2684;
+	color: #FFF;
+}
+
+.pastEditions-filter button:hover:not(.active) {
+	background: #ccc;
 }
 
 .button2 {
@@ -224,10 +430,12 @@ p {
 	font-size: 17px;
 	text-decoration: underline;
 	transition: 0.5s;
+	cursor: pointer;
 }
 
 .text-link:hover {
 	color: #4F2684;
+	font-weight: bold;
 }
 
 .icon-link {
@@ -248,8 +456,8 @@ p {
 }
 
 .footerHR {
-	margin: 1em 43%;
-	border: 1.2px solid #777;
+	margin: 1em 70px;
+	border-bottom: 1px solid #777;
 }
 
 .SMLink {
